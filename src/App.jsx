@@ -105,6 +105,12 @@ function BossModal({ boss, onClose }) {
     })
   }
 
+  const toggleAllDetails = () => {
+    const detailedNames = boss.abilities.filter(([, , , detail]) => detail).map(([name]) => name)
+    const allExpanded = detailedNames.every((name) => expandedAbilities.has(name))
+    setExpandedAbilities(allExpanded ? new Set() : new Set(detailedNames))
+  }
+
   if (!boss) return null
   return (
     <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
@@ -124,10 +130,17 @@ function BossModal({ boss, onClose }) {
         </header>
 
         <section className="modal-section">
-          <div className="section-kicker"><Sparkles /> Encounter mechanics</div>
+          <div className="mechanics-heading">
+            <div className="section-kicker"><Sparkles /> Encounter mechanics</div>
+            {boss.abilities.some(([, , , detail]) => detail) && (
+              <button className="expand-all-button" onClick={toggleAllDetails}>
+                {boss.abilities.filter(([, , , detail]) => detail).every(([name]) => expandedAbilities.has(name)) ? 'Collapse all' : 'Expand all details'}
+              </button>
+            )}
+          </div>
           {boss.abilities.length ? (
             <div className="ability-list">
-              {boss.abilities.map(([name, text, action, detail], index) => (
+              {boss.abilities.map(([name, text, action, detail, image], index) => (
                 <div className="ability" key={name}>
                   <span>{String(index + 1).padStart(2, '0')}</span>
                   <div>
@@ -145,7 +158,12 @@ function BossModal({ boss, onClose }) {
                         >
                           {expandedAbilities.has(name) ? 'Hide details' : 'Details'}
                         </button>
-                        {expandedAbilities.has(name) && <p className="ability-detail">{detail}</p>}
+                        {expandedAbilities.has(name) && (
+                          <div className={`ability-detail ${image ? 'has-image' : ''}`}>
+                            {image && <img src={image} alt={`${boss.name} ${name} mechanic example`} loading="lazy" decoding="async" />}
+                            <p>{detail}</p>
+                          </div>
+                        )}
                       </>
                     )}
                   </div>

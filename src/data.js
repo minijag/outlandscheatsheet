@@ -1,4 +1,5 @@
 const img = (file) => file ? `/bosses/${file}` : null
+const mechanic = (file) => file ? `/mechanics/${file}` : null
 
 export const bosses = [
   {
@@ -155,11 +156,11 @@ export const bosses = [
     name: 'Abyssal Daemon', type: 'Omni Boss', location: 'Omni Realm', slayer: 'Daemonic', role: 'Melee / mage objective boss', confidence: 'medium', image: img('abyssal-daemon.gif'),
     summary: 'A bleed-and-disease fight built around an interactive sphere, incoming void orbs, and explosive souls.',
     abilities: [
-      ['Green Sphere', 'Damages nearby players and throws flames while active. Double-click it to destroy it.', 'CLICK', 'The sphere damages anyone standing in its area and continues spawning random flames until a player double-clicks it. Treat it as the first-priority objective.'],
-      ['Flames', 'Spawn from the active sphere and deal minor damage. Step off the burning tile.', 'MOVE', 'Flames appear on random ground tiles for as long as the Green Sphere remains active. They deal minor damage; moving a single tile is enough to leave the fire.'],
-      ['Abyssal Claws', 'Appear randomly around the arena and inflict a 30+ damage bleed.', 'MOVE', 'Claws can appear anywhere on the battlefield rather than only near the boss. Their hit applies a bleed for roughly 30 or more damage.'],
-      ['Beckons the Void', 'Sends orbs inward from every side. Contact removes you into the Void for about 15 seconds.', 'MOVE', 'Void orbs enter from all sides of the arena. Touching one produces an effect similar to the Wilderness main boss and removes the player from the fight for approximately 15 seconds.'],
-      ['Abyssal Souls', 'Green ghosts explode into skulls for 50+ area damage and about 30 disease damage. Some variants deal area damage without disease.', 'MOVE', 'The green ghost variant bursts into skulls for roughly 50 or more area damage plus about 30 disease damage. The alternate soul explosion deals area damage without the disease component.'],
+      ['Green Sphere', 'Damages nearby players and throws flames while active. Double-click it to destroy it.', 'CLICK', 'The sphere damages anyone standing in its area and continues spawning random flames until a player double-clicks it. Treat it as the first-priority objective.', mechanic('abyssal-green-sphere.webp')],
+      ['Flames', 'Spawn from the active sphere and deal minor damage. Step off the burning tile.', 'MOVE', 'Flames appear on random ground tiles for as long as the Green Sphere remains active. They deal minor damage; moving a single tile is enough to leave the fire.', mechanic('abyssal-flames.webp')],
+      ['Abyssal Claws', 'Appear randomly around the arena and inflict a 30+ damage bleed.', 'MOVE', 'Claws can appear anywhere on the battlefield rather than only near the boss. Their hit applies a bleed for roughly 30 or more damage.', mechanic('abyssal-claws.webp')],
+      ['Beckons the Void', 'Sends orbs inward from every side. Contact removes you into the Void for about 15 seconds.', 'MOVE', 'Void orbs enter from all sides of the arena. Touching one produces an effect similar to the Wilderness main boss and removes the player from the fight for approximately 15 seconds.', mechanic('abyssal-void.webp')],
+      ['Abyssal Souls', 'Green ghosts explode into skulls for 50+ area damage and about 30 disease damage. Some variants deal area damage without disease.', 'MOVE', 'The green ghost variant bursts into skulls for roughly 50 or more area damage plus about 30 disease damage. The alternate soul explosion deals area damage without the disease component.', mechanic('abyssal-souls.webp')],
     ],
     tips: ['Destroy the Green Sphere immediately and leave every flame tile.', 'Watch every edge of the arena when void orbs begin moving inward.', 'Prepare bleed and disease mitigation such as Close Wounds, Immunize, Panacea, or defensive barriers.'],
   },
@@ -167,12 +168,12 @@ export const bosses = [
     name: 'Astral Daemon', type: 'Omni Boss', location: 'Omni Realm', slayer: 'Daemonic', role: 'High-resist raid mage', confidence: 'medium', image: img('astral-daemon.gif'),
     summary: 'A high-damage debuff fight with player-copying mirrors, dangerous beams, and reflective Solar Rings.',
     abilities: [
-      ['Astral Mirror', 'Spawns copies of random players until destroyed. Mirrors and copies expire after roughly 30–60 seconds.', 'CLICK', 'The mirror must be destroyed or it repeatedly creates random copies of players. Both the mirror and its copies eventually disappear after approximately 30–60 seconds if the group does not kill them first.'],
-      ['Focused Astral Energy', 'Deals 50+ damage and applies Grievous Injury, reducing damage resistance.', null, 'The initial hit deals roughly 50 or more damage. Grievous Injury then lowers the affected player’s damage resistance, making overlapping mechanics substantially more dangerous.'],
-      ['Astral Fireball', 'Deals 50+ damage and applies Backlash, increasing spell-fizzle chance.', 'MOVE', 'The fireball deals roughly 50 or more damage. Its Backlash debuff increases the victim’s chance to fizzle spell casts until the effect ends.'],
-      ['Pillars of Creation', 'Nearby beams deal 15+ damage per second.', 'MOVE', 'Each pillar projects a damaging beam. Remaining in its proximity deals roughly 15 or more damage every second, so leave the beam rather than trying to heal through it.'],
-      ['Cosmic Rays', 'Deal 50+ damage and apply Festering Wound, reducing healing received.', null, 'Cosmic Rays hit for roughly 50 or more damage and apply Festering Wound. The wound reduces all healing received by the affected player.'],
-      ['Solar Rings', 'Shield the boss, may reflect spells, and fire bursts for 25–50 damage.', 'HOLD', 'Solar Rings behave like a defensive shield. While they are active, the boss may reflect spells and the rings launch bursts dealing roughly 25–50 damage, so pause unsafe attacks.'],
+      ['Astral Mirror', 'Spawns copies of random players until destroyed. Mirrors and copies expire after roughly 30–60 seconds.', 'CLICK', 'The mirror must be destroyed or it repeatedly creates random copies of players. Both the mirror and its copies eventually disappear after approximately 30–60 seconds if the group does not kill them first.', mechanic('astral-mirror.webp')],
+      ['Focused Astral Energy', 'Deals 50+ damage and applies Grievous Injury, reducing damage resistance.', null, 'The initial hit deals roughly 50 or more damage. Grievous Injury then lowers the affected player’s damage resistance, making overlapping mechanics substantially more dangerous.', mechanic('astral-focused-energy.webp')],
+      ['Astral Fireball', 'Deals 50+ damage and applies Backlash, increasing spell-fizzle chance.', 'MOVE', 'The fireball deals roughly 50 or more damage. Its Backlash debuff increases the victim’s chance to fizzle spell casts until the effect ends.', mechanic('astral-fireball.webp')],
+      ['Pillars of Creation', 'Nearby beams deal 15+ damage per second.', 'MOVE', 'Each pillar projects a damaging beam. Remaining in its proximity deals roughly 15 or more damage every second, so leave the beam rather than trying to heal through it.', mechanic('astral-pillars.webp')],
+      ['Cosmic Rays', 'Deal 50+ damage and apply Festering Wound, reducing healing received.', null, 'Cosmic Rays hit for roughly 50 or more damage and apply Festering Wound. The wound reduces all healing received by the affected player.', mechanic('astral-cosmic-rays.webp')],
+      ['Solar Rings', 'Shield the boss, may reflect spells, and fire bursts for 25–50 damage.', 'HOLD', 'Solar Rings behave like a defensive shield. While they are active, the boss may reflect spells and the rings launch bursts dealing roughly 25–50 damage, so pause unsafe attacks.', mechanic('astral-solar-rings.webp')],
     ],
     tips: ['Destroy every Astral Mirror before player copies multiply.', 'Do not stand near Pillars of Creation.', 'Avoid stacking, stay at maximum practical range, and keep moving between mechanics.'],
   },
@@ -180,9 +181,9 @@ export const bosses = [
     name: 'Storm Daemon', type: 'Omni Boss', location: 'Omni Realm', slayer: 'Daemonic', role: 'Mobile lightning controller', confidence: 'medium', image: img('storm-daemon.gif'),
     summary: 'A movement fight where Lightning Rods, Ion Spheres, Tempests, and a charge compete with an enrage timer.',
     abilities: [
-      ['Lightning Rod', 'Priority target. Calls random 70–80 damage strikes until double-clicked or destroyed.', 'CLICK', 'Lightning Rods are the first priority. Their random strikes deal roughly 70–80 damage but can be avoided by moving. Players can cast spells while auto-attacking the rod.'],
-      ['Ion Spheres', 'Charge ranged players, reflect some attacks, and deal roughly 50 stamina plus 15 area damage.', 'MOVE', 'Ion Spheres select ranged players and charge toward them. They reflect some incoming attacks and retaliate for roughly 50 stamina damage plus 15 area damage.'],
-      ['Tempest', 'A hurricane deals roughly 10–15 area damage per second. It may slowly follow players, but this is unconfirmed.', 'MOVE', 'A Tempest spawns at a random location and deals approximately 10–15 area damage each second. The source suggests it slowly follows players but explicitly marks that behavior as unconfirmed.'],
+      ['Lightning Rod', 'Priority target. Calls random 70–80 damage strikes until double-clicked or destroyed.', 'CLICK', 'Lightning Rods are the first priority. Their random strikes deal roughly 70–80 damage but can be avoided by moving. Players can cast spells while auto-attacking the rod.', mechanic('storm-lightning-rod.webp')],
+      ['Ion Spheres', 'Charge ranged players, reflect some attacks, and deal roughly 50 stamina plus 15 area damage.', 'MOVE', 'Ion Spheres select ranged players and charge toward them. They reflect some incoming attacks and retaliate for roughly 50 stamina damage plus 15 area damage.', mechanic('storm-ion-spheres.webp')],
+      ['Tempest', 'A hurricane deals roughly 10–15 area damage per second. It may slowly follow players, but this is unconfirmed.', 'MOVE', 'A Tempest spawns at a random location and deals approximately 10–15 area damage each second. The source suggests it slowly follows players but explicitly marks that behavior as unconfirmed.', mechanic('storm-tempest.webp')],
       ['Charge', 'Rushes through a targeted path similarly to the Emperor Dragon.', 'MOVE', 'The Storm Daemon appears to use a charge similar to the Emperor Dragon in Nusero. Leave the targeted path and avoid carrying it through stacked allies.'],
       ['Enrage Timer', 'The fight becomes more dangerous if the group takes too long.', 'BURN', 'The encounter includes an enrage timer. Balance immediate Lightning Rod control against sustained boss damage so the fight does not run too long.'],
     ],

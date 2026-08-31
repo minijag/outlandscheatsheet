@@ -157,6 +157,9 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .modal-section:last-child { padding-bottom: 54px; }
 .section-kicker { display: flex; align-items: center; gap: 10px; margin-bottom: 19px; color: var(--gold-bright); font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
 .section-kicker svg { width: 17px; }
+.mechanics-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.expand-all-button { margin-top: -5px; padding: 8px 10px; border: 1px solid rgba(201,165,93,.42); color: var(--gold-bright); background: rgba(201,165,93,.08); font-size: 9px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+.expand-all-button:hover { border-color: var(--gold-bright); background: rgba(201,165,93,.15); }
 .ability { display: grid; grid-template-columns: 42px 1fr; gap: 16px; padding: 17px 0; border-top: 1px solid var(--line); }
 .ability > span { color: #536066; font-family: 'Cinzel', serif; font-size: 11px; }
 .ability h3 { margin-bottom: 5px; font-family: 'Cinzel', serif; font-size: 15px; font-weight: 500; }
@@ -170,7 +173,10 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .action-hold { color: #b9c0c2; border-color: rgba(153,165,169,.42); background: rgba(132,145,149,.1); }
 .ability-detail-toggle { margin-top: 10px; padding: 0; border: 0; border-bottom: 1px solid rgba(201,165,93,.42); color: var(--gold-bright); background: transparent; font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
 .ability-detail-toggle:hover { border-color: var(--gold-bright); }
-.ability p.ability-detail { margin-top: 11px; padding: 11px 13px; border-left: 2px solid rgba(201,165,93,.34); color: #b0b7b9; background: rgba(255,255,255,.025); line-height: 1.7; }
+.ability-detail { margin-top: 11px; padding: 11px 13px; border-left: 2px solid rgba(201,165,93,.34); background: rgba(255,255,255,.025); }
+.ability-detail.has-image { display: grid; grid-template-columns: minmax(90px, 180px) 1fr; gap: 14px; align-items: start; }
+.ability-detail img { width: 100%; max-height: 148px; object-fit: contain; object-position: center; background: #070a0c; }
+.ability-detail p { color: #b0b7b9 !important; line-height: 1.7 !important; }
 .empty-mechanics { display: grid; grid-template-columns: auto 1fr; gap: 16px; padding: 22px; color: #d98d82; background: rgba(168,77,64,.07); border: 1px solid rgba(168,77,64,.2); }
 .empty-mechanics h3 { margin-bottom: 5px; font-family: 'Cinzel', serif; font-size: 15px; }
 .empty-mechanics p { margin: 0; color: #929c9f; font-size: 12px; line-height: 1.6; }
@@ -230,6 +236,10 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
   .modal { width: 100%; max-height: 100vh; border: 0; }
   .modal-hero { grid-template-columns: 1fr; padding: 68px 22px 28px; gap: 24px; }
   .modal-art { height: 155px; }
+  .mechanics-heading { align-items: center; }
+  .ability-detail { padding: 10px; }
+  .ability-detail.has-image { grid-template-columns: 96px 1fr; gap: 10px; }
+  .ability-detail img { max-height: 126px; }
   .evidence { margin: 20px 22px 0; }
   .modal-section { padding: 30px 22px 4px; }
   .modal-section:last-child { padding-bottom: 38px; }
