@@ -188,6 +188,7 @@ function App() {
       </nav>
 
       <main id="top">
+        <h1 className="sr-only">UO Outlands Boss and Miniboss Cheat Sheet</h1>
         <section className="encounters" id="encounters">
           <div className="section-heading">
             <div><span className="section-number">01 / ENCOUNTER INDEX</span><h2>Choose your target</h2></div>
@@ -238,7 +239,7 @@ function App() {
         </section>
       </main>
 
-      <footer><div className="brand"><span className="brand-sigil"><Swords size={18} /></span><span>OUTLANDS <b>CHEAT SHEET</b></span></div><p>Community reference · Not affiliated with UO Outlands</p></footer>
+      <footer><div className="brand"><span className="brand-sigil"><Swords size={18} /></span><span>OUTLANDS <b>CHEAT SHEET</b></span></div></footer>
       <BossModal boss={selected} onClose={() => setSelected(null)} />
     </div>
   )

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.outlandscheatsheet.com/sitemap.xml
+
