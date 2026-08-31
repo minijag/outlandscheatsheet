@@ -75,7 +75,7 @@ export const bosses = [
     tips: ['Remain in motion and avoid clustering.', 'Retreat to resupply rather than chain-dying near the encounter.'],
   },
   {
-    name: 'The Forgotten King', type: 'Main Boss', location: 'Ossuary', slayer: 'Undead', role: 'Armored melee', confidence: 'medium', image: img('the-forgotten-king.gif'),
+    name: 'Forgotten King', type: 'Main Boss', location: 'Ossuary', slayer: 'Undead', role: 'Armored melee', confidence: 'medium', image: img('the-forgotten-king.gif'),
     summary: 'A trap gauntlet with punishing undead reinforcements.',
     abilities: [
       ['Spike Traps', 'Spikes appear at player locations with little warning and can cause bleeding.'],
@@ -142,7 +142,7 @@ export const bosses = [
     tips: ['Assign players to Watchstones and adds instead of tunneling the boss.', 'Spread for Suppression Blast.', 'Protect allies who are Turned to Steel.'],
   },
   {
-    name: 'The Undermind', type: 'Main Boss', location: 'Tidal Tomb', slayer: 'Monstrous', role: 'Armored melee / mage', confidence: 'low', image: img('theundermind.gif'),
+    name: 'Undermind', type: 'Main Boss', location: 'Tidal Tomb', slayer: 'Monstrous', role: 'Armored melee / mage', confidence: 'low', image: img('theundermind.gif'),
     summary: 'A 200,000-health armored hybrid with 50–60 melee damage, 150 Magery, and 30–40 spell damage. Its regional systems are documented, but a boss-specific ability breakdown is not yet public.',
     abilities: [
       ['Oxygen Clock — verified regional', 'After 10 minutes without a refill, Minor Deprivation deals 5 unavoidable damage every 5 seconds while above 66% health. At 20 minutes, Major Deprivation deals 10 every 5 seconds while above 33%. Recovery Dolphins outside boss rooms fully refill Oxygen every 5 seconds.'],
@@ -190,7 +190,7 @@ export const bosses = [
     tips: ['Destroy every Lightning Rod before returning to the boss.', 'Spread ranged players so Ion Spheres do not converge on the group.', 'Keep moving through lightning and Tempest damage while maintaining enough damage to beat the enrage timer.'],
   },
   {
-    name: 'The Terrorwood', type: 'Mini-Boss', location: 'Darkmire Temple', slayer: 'Nature', role: 'Stealth melee', confidence: 'medium', image: img('the-terrorwood.jpg'),
+    name: 'Terrorwood', type: 'Mini-Boss', location: 'Darkmire Temple', slayer: 'Nature', role: 'Stealth melee', confidence: 'medium', image: img('the-terrorwood.jpg'),
     summary: 'An arena-saturation fight where exploding mushrooms consume safe space.',
     abilities: [
       ['Explosive Mushrooms', 'Creates mushrooms that detonate for severe area damage.'],
@@ -302,7 +302,7 @@ export const bosses = [
     tips: ['Stop boss damage when reinforcements begin to stack.', 'Kill ranged adds before statues.', 'Keep moving through area telegraphs.'],
   },
   {
-    name: 'The Insatiable Maw', type: 'Mini-Boss', location: 'Ships', slayer: 'Monstrous', role: 'Ocean add controller', confidence: 'medium', image: img('the-insatiable-maw.png'),
+    name: 'Insatiable Maw', type: 'Mini-Boss', location: 'Ships', slayer: 'Monstrous', role: 'Ocean add controller', confidence: 'medium', image: img('the-insatiable-maw.png'),
     summary: 'An ocean mini-boss that slows the ship with Barnacles while repeated Sea Calls crowd the deck with additional threats.',
     abilities: [
       ['Barnacles', 'Applies a 25% ship-speed reduction for 30 seconds, limiting the crew’s ability to reposition.'],
