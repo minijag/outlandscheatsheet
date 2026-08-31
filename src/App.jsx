@@ -134,7 +134,7 @@ function BossModal({ boss, onClose }) {
             <div className="section-kicker"><Sparkles /> Encounter mechanics</div>
             {boss.abilities.some(([, , , detail]) => detail) && (
               <button className="expand-all-button" onClick={toggleAllDetails}>
-                {boss.abilities.filter(([, , , detail]) => detail).every(([name]) => expandedAbilities.has(name)) ? 'Collapse all' : 'Expand all details'}
+                {boss.abilities.filter(([, , , detail]) => detail).every(([name]) => expandedAbilities.has(name)) ? 'Collapse details' : 'Expand details'}
               </button>
             )}
           </div>
