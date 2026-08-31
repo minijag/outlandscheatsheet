@@ -82,8 +82,11 @@ function BossCard({ boss, onOpen, compact = false }) {
 }
 
 function BossModal({ boss, onClose }) {
+  const [expandedAbilities, setExpandedAbilities] = useState(() => new Set())
+
   useEffect(() => {
     if (!boss) return
+    setExpandedAbilities(new Set())
     const onKey = (event) => event.key === 'Escape' && onClose()
     document.addEventListener('keydown', onKey)
     document.body.classList.add('modal-open')
@@ -93,8 +96,16 @@ function BossModal({ boss, onClose }) {
     }
   }, [boss, onClose])
 
+  const toggleAbility = (name) => {
+    setExpandedAbilities((current) => {
+      const next = new Set(current)
+      if (next.has(name)) next.delete(name)
+      else next.add(name)
+      return next
+    })
+  }
+
   if (!boss) return null
-  const c = confidence[boss.confidence]
   return (
     <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
       <article className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -112,19 +123,32 @@ function BossModal({ boss, onClose }) {
           </div>
         </header>
 
-        <div className={`evidence evidence-${boss.confidence}`}>
-          {boss.confidence === 'medium' ? <BookOpen /> : <CircleAlert />}
-          <div><strong>{c.label}</strong><p>{c.note}</p></div>
-        </div>
-
         <section className="modal-section">
           <div className="section-kicker"><Sparkles /> Encounter mechanics</div>
           {boss.abilities.length ? (
             <div className="ability-list">
-              {boss.abilities.map(([name, text], index) => (
+              {boss.abilities.map(([name, text, action, detail], index) => (
                 <div className="ability" key={name}>
                   <span>{String(index + 1).padStart(2, '0')}</span>
-                  <div><h3>{name}</h3><p>{text}</p></div>
+                  <div>
+                    <div className="ability-heading">
+                      <h3>{name}</h3>
+                      {action && <span className={`action-tag action-${action.toLowerCase()}`}>{action}</span>}
+                    </div>
+                    <p>{text}</p>
+                    {detail && (
+                      <>
+                        <button
+                          className="ability-detail-toggle"
+                          onClick={() => toggleAbility(name)}
+                          aria-expanded={expandedAbilities.has(name)}
+                        >
+                          {expandedAbilities.has(name) ? 'Hide details' : 'Details'}
+                        </button>
+                        {expandedAbilities.has(name) && <p className="ability-detail">{detail}</p>}
+                      </>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

@@ -161,6 +161,17 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .ability > span { color: #536066; font-family: 'Cinzel', serif; font-size: 11px; }
 .ability h3 { margin-bottom: 5px; font-family: 'Cinzel', serif; font-size: 15px; font-weight: 500; }
 .ability p { margin: 0; color: #929c9f; font-size: 12px; line-height: 1.65; }
+.ability-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
+.ability-heading h3 { margin: 0; }
+.action-tag { flex: 0 0 auto; padding: 4px 7px 3px; border: 1px solid; font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .12em; line-height: 1; }
+.action-move { color: #8fd5dc; border-color: rgba(91,190,201,.48); background: rgba(53,153,165,.12); }
+.action-click { color: var(--gold-bright); border-color: rgba(201,165,93,.5); background: rgba(201,165,93,.12); }
+.action-burn { color: #f08c78; border-color: rgba(208,91,67,.52); background: rgba(168,77,64,.14); }
+.action-brace { color: #c8b7e8; border-color: rgba(153,118,205,.5); background: rgba(120,82,171,.13); }
+.action-hold { color: #b9c0c2; border-color: rgba(153,165,169,.42); background: rgba(132,145,149,.1); }
+.ability-detail-toggle { margin-top: 10px; padding: 0; border: 0; border-bottom: 1px solid rgba(201,165,93,.42); color: var(--gold-bright); background: transparent; font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
+.ability-detail-toggle:hover { border-color: var(--gold-bright); }
+.ability p.ability-detail { margin-top: 11px; padding: 11px 13px; border-left: 2px solid rgba(201,165,93,.34); color: #b0b7b9; background: rgba(255,255,255,.025); line-height: 1.7; }
 .empty-mechanics { display: grid; grid-template-columns: auto 1fr; gap: 16px; padding: 22px; color: #d98d82; background: rgba(168,77,64,.07); border: 1px solid rgba(168,77,64,.2); }
 .empty-mechanics h3 { margin-bottom: 5px; font-family: 'Cinzel', serif; font-size: 15px; }
 .empty-mechanics p { margin: 0; color: #929c9f; font-size: 12px; line-height: 1.6; }
