@@ -109,14 +109,15 @@ export const bosses = [
   },
   {
     name: 'Gatekeeper', type: 'Main Boss', location: 'Mausoleum', slayer: 'Undead', role: 'Mage', confidence: 'medium', image: img('gatekeeper.gif'),
-    summary: 'An extreme caster check with enormous lightning coverage and paralysis.',
+    summary: 'A movement-discipline fight with two opposite reactions: freeze during Chain Lightning, then keep moving through Starfall.',
     abilities: [
-      ['Chain Lightning', 'A very large lightning attack with roughly two-screen reach in the historical guide.'],
-      ['Paralysis', 'Lightning can paralyze players and interrupt spellcasting.'],
+      ['Chain Lightning', 'Repeatedly strikes in response to player movement across a very large area. Stop moving when Chain Lightning begins; additional movement causes additional strikes.'],
+      ['Starfall', 'Calls down a rapid barrage of stars that can kill a stationary player almost instantly. Move continuously until the Starfall sequence ends.'],
+      ['Paralysis', 'Lightning can paralyze players and interrupt spellcasting, making unnecessary movement during Chain Lightning even more dangerous.'],
       ['Hybrid AoE', 'Deals both physical and magical area damage.'],
       ['Summoned Casters', 'Adds contribute additional area damage.'],
     ],
-    tips: ['Keep the boss engaged in melee to reduce casts.', 'Avoid standing adjacent and assign dedicated healers.'],
+    tips: ['Chain Lightning: stop moving until it ends.', 'Starfall: keep moving until it ends.', 'Keep the boss engaged in melee to reduce casts and assign dedicated healers.'],
   },
   {
     name: 'Terathan Goliath', type: 'Main Boss', location: 'Mount Petram', slayer: 'Monstrous', role: 'Arena-wide melee', confidence: 'medium', image: img('terathan-goliath.gif'),
