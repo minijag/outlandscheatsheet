@@ -26,7 +26,21 @@ function savedPreference(key, fallback) {
 }
 
 function BossArt({ boss, large = false }) {
-  if (boss.image) return <img className={large ? 'boss-art boss-art-large' : 'boss-art'} src={boss.image} alt={boss.name} />
+  if (boss.image) {
+    const mobileImage = boss.image.replace(/\.[^.]+$/, '-mobile.webp')
+    return (
+      <picture className="boss-picture">
+        <source media="(max-width: 680px)" srcSet={mobileImage} type="image/webp" />
+        <img
+          className={large ? 'boss-art boss-art-large' : 'boss-art'}
+          src={boss.image}
+          alt={boss.name}
+          loading={large ? 'eager' : 'lazy'}
+          decoding="async"
+        />
+      </picture>
+    )
+  }
   return (
     <div className={large ? 'art-fallback art-fallback-large' : 'art-fallback'} aria-hidden="true">
       <Skull size={large ? 58 : 34} strokeWidth={1.3} />
