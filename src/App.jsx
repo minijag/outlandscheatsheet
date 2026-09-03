@@ -25,10 +25,6 @@ function savedPreference(key, fallback) {
   }
 }
 
-function DiscordMark() {
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.32 4.37a19.8 19.8 0 0 0-4.89-1.52.07.07 0 0 0-.08.04c-.21.38-.44.86-.61 1.25a18.2 18.2 0 0 0-5.49 0c-.17-.39-.4-.87-.61-1.25a.08.08 0 0 0-.08-.04 19.8 19.8 0 0 0-4.89 1.52.07.07 0 0 0-.03.03C.53 9.05.9 13.56 2.55 18.03a.08.08 0 0 0 .03.04 19.7 19.7 0 0 0 5.99 3.03.07.07 0 0 0 .08-.03c.46-.63.87-1.29 1.22-1.98a.07.07 0 0 0-.04-.1 12.9 12.9 0 0 1-1.87-.9.07.07 0 0 1-.01-.12c.13-.1.25-.19.37-.29a.07.07 0 0 1 .07-.01c3.93 1.8 8.18 1.8 12.06 0a.07.07 0 0 1 .08.01c.12.1.24.2.37.29a.07.07 0 0 1-.01.12c-.6.35-1.23.65-1.87.9a.07.07 0 0 0-.04.1c.36.69.77 1.35 1.22 1.98a.07.07 0 0 0 .08.03 19.6 19.6 0 0 0 6-3.03.08.08 0 0 0 .03-.04c1.94-5.16 1.63-9.62-.51-13.63a.06.06 0 0 0-.03-.03ZM8.02 15.3c-1.18 0-2.15-1.08-2.15-2.4s.95-2.4 2.15-2.4c1.21 0 2.17 1.08 2.15 2.4 0 1.32-.95 2.4-2.15 2.4Zm7.95 0c-1.18 0-2.15-1.08-2.15-2.4s.95-2.4 2.15-2.4c1.21 0 2.17 1.08 2.15 2.4 0 1.32-.94 2.4-2.15 2.4Z" /></svg>
-}
-
 function BossArt({ boss, large = false }) {
   if (boss.image) {
     const mobileImage = boss.image.replace(/\.[^.]+$/, '-mobile.webp')
@@ -241,7 +237,7 @@ function App() {
             <span className="brand-sigil"><Swords size={21} /></span>
             <span>OUTLANDS <b>CHEAT SHEET</b></span>
           </button>
-          <a className="discord-link" href="https://discord.gg/TmtPheKF2v" target="_blank" rel="noreferrer"><DiscordMark /><span>Discord</span></a>
+          <a className="discord-link" href="https://discord.gg/TmtPheKF2v" target="_blank" rel="noreferrer"><img src="/discord-symbol.svg" alt="" /><span>Discord</span></a>
         </div>
         <div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
           <button onClick={() => scrollTo('encounters')}>Encounters</button>
