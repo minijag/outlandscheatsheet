@@ -239,6 +239,7 @@ function App() {
         <div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
           <button onClick={() => scrollTo('encounters')}>Encounters</button>
           <button onClick={() => scrollTo('sources')}>Sources</button>
+          <a className="discord-link" href="https://discord.gg/TmtPheKF2v" target="_blank" rel="noreferrer">Join Discord</a>
         </div>
         <button className="icon-button menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation"><Menu /></button>
       </nav>
