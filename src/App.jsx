@@ -148,10 +148,10 @@ function BossModal({ boss, onClose }) {
                     <p>{text}</p>
                     {callouts.map((entry) => (
                       <div className="journal-callout" key={entry.phrase}>
-                        <p className="ability-callout"><span>Callout</span> “{entry.phrase}”</p>
+                        <p className="ability-callout"><span>Callout</span> {entry.phrase}</p>
                       </div>
                     ))}
-                    {!callouts.length && callout && <p className="ability-callout"><span>Prior callout · unverified</span> “{callout}”</p>}
+                    {!callouts.length && callout && <p className="ability-callout"><span>Prior callout · unverified</span> {callout}</p>}
                     {image && (
                       <>
                         <button
