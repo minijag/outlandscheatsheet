@@ -52,9 +52,11 @@ Verification applies to the callout's presence; matching it to a mechanic and
 describing its effects may involve inference. New mechanics describe the wording
 without inventing damage, timing, targeting, or counterplay.
 
-`python scripts/attach_boss_callouts.py` rebuilds this data from the existing
-`reports/boss-callouts/report.json` using the reviewed rules in that script.
-It does not regenerate the scanner report. New phrases that have no unique
+`python scripts/attach_boss_callouts.py` is a one-time initializer. If
+`src/journal-callouts.json` exists, it exits without writing any files, preserving
+all existing abilities and manual edits. Edit descriptions directly in that JSON
+(or `src/data.js` for original abilities). It does not regenerate the scanner
+report or edit HTML. During initial creation, new phrases that have no unique
 mapping stop the import for review. Player/system mentions are not imported as
 boss speech. Run `node --test scripts/test_journal_callouts.mjs` and `npm run build`
 to validate the integration. The evidence includes journal filenames, but omits

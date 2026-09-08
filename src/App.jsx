@@ -60,7 +60,7 @@ function BossCard({ boss, onOpen, compact = false }) {
     <button className={`boss-card boss-card-${typeClass}`} onClick={() => onOpen(boss)} aria-label={`Open ${boss.name} encounter guide`}>
       <div className="card-art">
         <BossArt boss={boss} />
-        <span className={`confidence confidence-${verifiedCount ? 'medium' : 'low'}`}>{verifiedCount}/{boss.abilities.length} log verified</span>
+        <span className={`confidence confidence-${verifiedCount ? 'medium' : 'low'}`}>{verifiedCount}/{boss.abilities.length} Verified</span>
       </div>
       <div className="card-copy">
         <div className="eyebrow"><span>{boss.type}</span><i />{boss.slayer}</div>

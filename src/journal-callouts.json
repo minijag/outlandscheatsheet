@@ -89,7 +89,7 @@
         ]
       },
       "Screech": {
-        "description": "Screeches; any additional effect is not established by the announcement.",
+        "description": "Screeches. Any additional effect is unconfirmed.",
         "callouts": [
           {
             "phrase": "*screeches maddeningly*",
@@ -393,7 +393,7 @@
         ]
       },
       "Massive Breath": {
-        "description": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+        "description": "Draws a massive breath. Its effect is unconfirmed.",
         "callouts": [
           {
             "phrase": "*takes an incredibly massive breath*",
@@ -505,7 +505,7 @@
         ]
       },
       "Scythe Spin": {
-        "description": "Spins a scythe, with a violent variant. The callout does not establish its reach or damage.",
+        "description": "Spins a scythe, with a violent variant. Its reach and damage are unconfirmed.",
         "callouts": [
           {
             "phrase": "*spins scythe violently*",
@@ -524,7 +524,7 @@
         ]
       },
       "Chaos Signs": {
-        "description": "Forms multiple chaos signs. Their effects and how players interact with them are not established by the wording.",
+        "description": "Forms multiple chaos signs. Their effects and interactions are unconfirmed.",
         "callouts": [
           {
             "phrase": "*forms many chaos signs*",
@@ -557,7 +557,7 @@
     },
     "Lord Bile": {
       "Regurgitated Meals": {
-        "description": "Regurgitates previous meals; the log does not identify what appears.",
+        "description": "Regurgitates previous meals. What appears is unconfirmed.",
         "callouts": [
           {
             "phrase": "*regurgitates previous meals*",
@@ -946,7 +946,7 @@
     },
     "Kraul Hydra": {
       "Snakecharm": {
-        "description": "A snakecharm announcement appears on the boss; its origin and effect are not established.",
+        "description": "Displays Snakecharm. Its source and effect are unconfirmed.",
         "callouts": [
           {
             "phrase": "*snakecharm*",
@@ -1027,7 +1027,7 @@
         ]
       },
       "Glowmark Status": {
-        "description": "A glowmark annotation appears on the boss; its origin is not established.",
+        "description": "Displays Glowmark. Its source and effect are unconfirmed.",
         "callouts": [
           {
             "phrase": "*glowmark*",
@@ -1179,7 +1179,7 @@
     },
     "Terathan Goliath": {
       "Swarm Summons": {
-        "description": "Summons a swarm; the announcement does not identify its creatures.",
+        "description": "Summons a swarm. The creature types are unconfirmed.",
         "callouts": [
           {
             "phrase": "*summons the swarm*",
@@ -1386,7 +1386,7 @@
         ]
       },
       "Turned to Stone": {
-        "description": "A turned-to-stone annotation appears; the log does not identify the affected target.",
+        "description": "Signals a transformation to stone. The affected target is unconfirmed.",
         "callouts": [
           {
             "phrase": "*turned to stone*",
@@ -1398,7 +1398,7 @@
         ]
       },
       "Lockdown": {
-        "description": "Initiates lockdown, with a rapid variant; the original log spells this 'initates'.",
+        "description": "Initiates lockdown, with a rapid variant.",
         "callouts": [
           {
             "phrase": "*initates lockdown*",
@@ -1547,7 +1547,7 @@
     },
     "Abyssal Daemon": {
       "Rift Servants": {
-        "description": "Summons servants from the rift; the announcement does not identify their types.",
+        "description": "Summons servants from the rift. The servant types are unconfirmed.",
         "callouts": [
           {
             "phrase": "*summons servants from the rift*",
@@ -1675,7 +1675,7 @@
     },
     "Astral Daemon": {
       "Rift Servants": {
-        "description": "Summons servants from the rift; the announcement does not identify their types.",
+        "description": "Summons servants from the rift. The servant types are unconfirmed.",
         "callouts": [
           {
             "phrase": "*summons servants from the rift*",
@@ -1796,7 +1796,7 @@
     },
     "Storm Daemon": {
       "Rift Servants": {
-        "description": "Summons servants from the rift; the announcement does not identify their types.",
+        "description": "Summons servants from the rift. The servant types are unconfirmed.",
         "callouts": [
           {
             "phrase": "*summons servants from the rift*",
@@ -2026,7 +2026,7 @@
     },
     "Sanguineous": {
       "Deflection": {
-        "description": "Announces a deflection; the journal does not identify the attack deflected.",
+        "description": "Deflects an attack. Which attack types can be deflected is unconfirmed.",
         "callouts": [
           {
             "phrase": "*deflects*",
@@ -2174,7 +2174,7 @@
     },
     "Pit Dragon": {
       "Screech": {
-        "description": "Screeches; any additional effect is not established by the announcement.",
+        "description": "Screeches. Any additional effect is unconfirmed.",
         "callouts": [
           {
             "phrase": "*screeches*",
@@ -2205,7 +2205,7 @@
         ]
       },
       "Massive Breath": {
-        "description": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+        "description": "Draws a massive breath. Its effect is unconfirmed.",
         "callouts": [
           {
             "phrase": "*takes incredibly massive breath*",
@@ -2366,7 +2366,7 @@
     },
     "Lodestone": {
       "Earth Beckoning": {
-        "description": "Beckons the earth; the announcement does not identify summoned objects or creatures.",
+        "description": "Beckons the earth. Any resulting objects or creatures are unconfirmed.",
         "callouts": [
           {
             "phrase": "*beckons the earth*",
@@ -2473,7 +2473,7 @@
     },
     "Kraul Hivemother": {
       "Clicking": {
-        "description": "Makes a clicking announcement. The cue alone does not identify an attack or summon.",
+        "description": "Makes a clicking sound. Its effect is unknown.",
         "callouts": [
           {
             "phrase": "*clicks*",
@@ -2497,7 +2497,7 @@
         ]
       },
       "Larval Eggs": {
-        "description": "Lays larval eggs, sometimes a colony. The callout does not identify what hatches or when.",
+        "description": "Lays larval eggs, sometimes a colony. What hatches and when remain unknown.",
         "callouts": [
           {
             "phrase": "*lays a colony of larval eggs*",
@@ -2535,7 +2535,7 @@
         ]
       },
       "Mold Spores": {
-        "description": "Gathers mold spores, sometimes a swarm. Their resulting effects are not established by the callout.",
+        "description": "Gathers mold spores, sometimes a swarm. Their effects are unconfirmed.",
         "callouts": [
           {
             "phrase": "*gathers a swarm of mold spores*",
@@ -2599,7 +2599,7 @@
         ]
       },
       "Massive Breath": {
-        "description": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+        "description": "Draws a massive breath. Its effect is unconfirmed.",
         "callouts": [
           {
             "phrase": "*takes incredibly massive breath*",
@@ -3249,7 +3249,7 @@
     },
     "Broodbearer": {
       "Brooding": {
-        "description": "Announces brooding; the cue alone does not identify offspring or their behavior.",
+        "description": "Broods. Whether it produces offspring and how they behave are unconfirmed.",
         "callouts": [
           {
             "phrase": "*broods*",
@@ -3301,7 +3301,7 @@
     },
     "Flamekeeper": {
       "Eruption": {
-        "description": "Announces an eruption; its area and damage are not recorded in the callout.",
+        "description": "Erupts. Its area and damage are unconfirmed.",
         "callouts": [
           {
             "phrase": "*erupts*",

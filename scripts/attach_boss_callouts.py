@@ -249,14 +249,14 @@ Eruption|erupts
 
 # Wording-based descriptions deliberately avoid inventing damage or counters.
 DESCRIPTIONS = {
-    "Scythe Spin": "Spins a scythe, with a violent variant. The callout does not establish its reach or damage.",
-    "Chaos Signs": "Forms multiple chaos signs. Their effects and how players interact with them are not established by the wording.",
+    "Scythe Spin": "Spins a scythe, with a violent variant. Its reach and damage are unconfirmed.",
+    "Chaos Signs": "Forms multiple chaos signs. Their effects and interactions are unconfirmed.",
     "Spin Out": "Announces spinning out; its movement pattern and resulting effect are unknown.",
-    "Clicking": "Makes a clicking announcement. The cue alone does not identify an attack or summon.",
+    "Clicking": "Makes a clicking sound. Its effect is unknown.",
     "Dust Cloud": "Announces a dust cloud; its area, duration, and effects are unknown.",
-    "Larval Eggs": "Lays larval eggs, sometimes a colony. The callout does not identify what hatches or when.",
+    "Larval Eggs": "Lays larval eggs, sometimes a colony. What hatches and when remain unknown.",
     "Hivemind": "Channels the hivemind, with an urgent variant. Its target and effects are unknown.",
-    "Mold Spores": "Gathers mold spores, sometimes a swarm. Their resulting effects are not established by the callout.",
+    "Mold Spores": "Gathers mold spores, sometimes a swarm. Their effects are unconfirmed.",
     "Fly Infestation": "Announces a fly infestation; its targets and effects are unknown.",
     "Calls for Aid": "Calls for assistance, suggesting a reinforcement cue.",
     "Debilitating Slime": "Announces a spray of debilitating slime.",
@@ -264,7 +264,7 @@ DESCRIPTIONS = {
     "Strange Shards": "Flings a shower of strange shards.",
     "Regurgitated Stones": "Regurgitates strange stones, sometimes announced as many stones.",
     "Tail Lash": "Lashes its tail wildly.",
-    "Screech": "Screeches; any additional effect is not established by the announcement.",
+    "Screech": "Screeches. Any additional effect is unconfirmed.",
     "Flame Rifts": "Announces the creation of one or several flame rifts.",
     "Flaming Fury": "Announces a release of fury, with a flaming variant.",
     "Inferno": "Announces a summoned inferno.",
@@ -273,12 +273,12 @@ DESCRIPTIONS = {
     "Rage Explosion": "Announces an explosion of rage.",
     "Summoned Flames": "Announces summoned flames.",
     "Deep Breath": "Draws a deep breath as a possible wind-up cue.",
-    "Massive Breath": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+    "Massive Breath": "Draws a massive breath. Its effect is unconfirmed.",
     "Earth Shaking": "Announces shaking the earth, sometimes violently.",
     "Circling": "Circles rapidly or feverishly.",
     "Flamemark": "Places a flamemark, with a powerful variant.",
     "Wing Beats": "Beats its massive wings furiously.",
-    "Regurgitated Meals": "Regurgitates previous meals; the log does not identify what appears.",
+    "Regurgitated Meals": "Regurgitates previous meals. What appears is unconfirmed.",
     "Stomach Rumble": "Its stomach begins to rumble, sometimes violently.",
     "Discomfort": "Looks uncomfortable or extremely uncomfortable, suggesting a wind-up cue.",
     "Built-Up Gas": "Releases a large amount of built-up gas.",
@@ -294,7 +294,7 @@ DESCRIPTIONS = {
     "Glowmark Status": "A glowmark annotation appears on the boss; its origin is not established.",
     "Monument Pillaging": "Pillages monuments, with a variant announcing razing and pillaging.",
     "Death's Head": "Raises a death's head, sometimes described as fatal.",
-    "Snakecharm": "A snakecharm announcement appears on the boss; its origin and effect are not established.",
+    "Snakecharm": "Displays Snakecharm. Its source and effect are unconfirmed.",
     "Strange Orbs": "Unleashes strange orbs, sometimes in a flurry.",
     "Snake Pits": "Creates snake pits, sometimes a swarm of them.",
     "Coiled Energy": "Releases coiled energy, with a torrent variant.",
@@ -302,7 +302,7 @@ DESCRIPTIONS = {
     "Arcane Spheres": "Creates a battery of arcane spheres.",
     "Balefire": "Wields balefire, with a wild variant.",
     "Mirror Images": "Forms several mirror images.",
-    "Swarm Summons": "Summons a swarm; the announcement does not identify its creatures.",
+    "Swarm Summons": "Summons a swarm. The creature types are unconfirmed.",
     "Acid Spray": "Sprays a torrent of acid.",
     "Spine Volley": "Releases a flurry of spines.",
     "Infectious Spores": "Shoots a cloud of infectious spores.",
@@ -312,8 +312,8 @@ DESCRIPTIONS = {
     "Searchlights": "Engages searchlights, sometimes in a sweep.",
     "Stygian Energy": "Unleashes stygian energy, with a massive variant.",
     "Imprisonment": "Begins imprisonment, with a lengthy variant.",
-    "Turned to Stone": "A turned-to-stone annotation appears; the log does not identify the affected target.",
-    "Lockdown": "Initiates lockdown, with a rapid variant; the original log spells this 'initates'.",
+    "Turned to Stone": "Signals a transformation to stone. The affected target is unconfirmed.",
+    "Lockdown": "Initiates lockdown, with a rapid variant.",
     "Reinforcement Call": "Announces 'raises hell', suggesting a reinforcement cue.",
     "Breath of the Deep": "Announces a breath of the deep, sometimes a long breath.",
     "Mindshrooms": "Spews mindshrooms, with a massive variant.",
@@ -321,7 +321,7 @@ DESCRIPTIONS = {
     "Drowned Monoliths": "Raises drowned monoliths, sometimes a swathe of them.",
     "Extended Maw": "Extends its maw, with a hungry variant.",
     "Fishy Imprisonment": "Announces fishy imprisonment, with a severe variant.",
-    "Rift Servants": "Summons servants from the rift; the announcement does not identify their types.",
+    "Rift Servants": "Summons servants from the rift. The servant types are unconfirmed.",
     "Abyssal Doom": "Manifests abyssal doom, sometimes described as certain.",
     "Abyssal Fury": "Unleashes abyssal fury, with a terrifying variant.",
     "Lightning Blitz": "Announces a lightning blitz, with an arcing variant.",
@@ -332,7 +332,7 @@ DESCRIPTIONS = {
     "Swampy Seeds": "Plants a great deal of swampy seeds.",
     "Needle Seeds": "Plants needle seeds, sometimes a field of them.",
     "Spikeseeds": "Shoots spikeseeds, sometimes a swarm.",
-    "Deflection": "Announces a deflection; the journal does not identify the attack deflected.",
+    "Deflection": "Deflects an attack. Which attack types can be deflected is unconfirmed.",
     "Spell Parry": "Announces parrying a spell.",
     "Living Blood": "Brings blood to life, suggesting an animation or summon.",
     "Charge": "Announces a charge.",
@@ -348,7 +348,7 @@ DESCRIPTIONS = {
     "Flaming Skulls": "Throws flaming skulls, sometimes a pile.",
     "Embalming Mixture": "Prepares embalming mixture, sometimes a massive amount.",
     "Raised Dead": "Raises dead, sometimes a good number of them.",
-    "Earth Beckoning": "Beckons the earth; the announcement does not identify summoned objects or creatures.",
+    "Earth Beckoning": "Beckons the earth. Any resulting objects or creatures are unconfirmed.",
     "Ground Pounding": "Pounds the ground, sometimes to dust.",
     "Thrown Stones": "Throws stones, sometimes many stones.",
     "Crush": "Announces a crushing action.",
@@ -378,7 +378,7 @@ DESCRIPTIONS = {
     "Webbing": "Readies webbing, suggesting an upcoming web effect.",
     "Painful Memory": "Announces a painful memory; the target and effect are not identified.",
     "Wail for the Past": "Wails for the past; the target and effect are not identified.",
-    "Eruption": "Announces an eruption; its area and damage are not recorded in the callout.",
+    "Eruption": "Erupts. Its area and damage are unconfirmed.",
 }
 
 
@@ -388,6 +388,10 @@ def canonical_name(name):
 
 
 def main():
+    output = ROOT / "src/journal-callouts.json"
+    if output.exists():
+        print("One-time import already completed. Existing ability data is preserved; edit src/journal-callouts.json directly.")
+        return
     report = json.loads((ROOT / "reports/boss-callouts/report.json").read_text(encoding="utf-8"))
     rules = {}
     for line in RULES.strip().splitlines():
@@ -408,7 +412,9 @@ def main():
         name = matches[0]
         entry = result["bosses"][row["boss"]].setdefault(name, {"description": DESCRIPTIONS.get(name), "callouts": []})
         entry["callouts"].append({"phrase": row["phrase"], "count": row["count"], "source": Path(row["example_file"]).name, "line": row["example_line"], "timestamp": row["example_timestamp"]})
-    (ROOT / "src/journal-callouts.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Exclusive creation also prevents overwriting a file created during import.
+    with output.open("x", encoding="utf-8") as stream:
+        stream.write(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     print(f"Attached {sum(len(e['callouts']) for b in result['bosses'].values() for e in b.values())} callouts to {sum(len(b) for b in result['bosses'].values())} mechanics.")
 
 

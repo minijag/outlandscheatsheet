@@ -366,7 +366,7 @@ export const bosses = rawBosses.map((boss) => {
       if (!entry.description) throw new Error(`Missing journal description: ${boss.name} / ${name}`)
       abilities.push({
         name, text: entry.description, journalDerived: true,
-        detail: 'Description inferred from the journal wording. Damage, targeting, duration, and counterplay have not been established by these callouts.',
+        detail: 'Damage, targeting, duration, and counterplay are unconfirmed.',
       })
     }
   }
