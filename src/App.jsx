@@ -145,13 +145,13 @@ function BossModal({ boss, onClose }) {
                       <span className={`verification-tag verification-${verification}`} title={verification === 'verified' ? 'Callout observed in the journal; effects and association may be inferred.' : 'No matching callout found in the journal report.'}>{verification.toUpperCase()}</span>
                       {action && <span className={`action-tag action-${action.toLowerCase()}`}>{action}</span>}
                     </div>
-                    <p>{text}</p>
                     {callouts.map((entry) => (
                       <div className="journal-callout" key={entry.phrase}>
                         <p className="ability-callout"><span>Callout</span> {entry.phrase}</p>
                       </div>
                     ))}
                     {!callouts.length && callout && <p className="ability-callout"><span>Prior callout · unverified</span> {callout}</p>}
+                    <p>{text}</p>
                     {image && (
                       <>
                         <button
