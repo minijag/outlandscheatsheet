@@ -1,7 +1,8 @@
 const img = (file) => file ? `/bosses/${file}` : null
 const mechanic = (file) => file ? `/mechanics/${file}` : null
+const ability = ([name, text, action, detail, image, callout]) => ({ name, text, action, detail, image, callout: callout ?? null })
 
-export const bosses = [
+const rawBosses = [
   {
     name: 'Behemoth Basilisk', type: 'Main Boss', location: 'Cavernam', slayer: 'Monstrous', role: 'Armored melee', confidence: 'medium', image: img('behemoth-basilisk.gif'),
     summary: 'A positional poison fight built around breath attacks and falling ice.',
@@ -36,7 +37,9 @@ export const bosses = [
     summary: 'A movement fight that punishes stacking and ignored reinforcements.',
     abilities: [
       ['Dragon Breath', 'A slow directional breath attack that can be sidestepped.'],
-      ['Charge', 'Rushes a target or location and punishes stacked players.'],
+      ['Long Deep Breath', 'Takes a long deep breath. Its effect is currently unknown.', null, null, null, 'Takes a long, deep breath.'],
+      ['Charge', 'Rushes a target or location, punishes stacked players, and leaves a trail of flames behind.'],
+      ['Feed', 'Feeds ravenously in melee range, damaging nearby players and healing itself.', null, null, null, 'Feeds ravenously.'],
       ['Draconic Summons', 'Calls Spine Breakers, Sun Wyrms, and dragons.'],
     ],
     tips: ['Spread for the charge.', 'Clear summons before finishing the boss.'],
@@ -90,11 +93,14 @@ export const bosses = [
     summary: 'An add-control check whose late waves can overwhelm even large groups.',
     abilities: [
       ['Summon Waves', 'Calls increasingly dangerous waves of cathedral monsters.'],
-      ['Flame Shapers', 'Priority adds capable of extreme group damage.'],
-      ['Priests', 'Support adds that reinforce the encounter.'],
+      ['Stonecrafting Masterwork', 'Creates a gargoyle statue that should be clicked.', 'CLICK', null, null, 'Creates a stonecrafting masterwork.'],
+      ['Immolation Runes', 'Creates fire runes that deal damage to players standing in them.', 'MOVE', null, null, 'Forges a torrent of immolation runes.'],
+      ['Static', 'Yellow orbs.', null, null, null, 'Releases overcharged static.'],
+      ["Hell's Bells", 'Charms the player.', null, null, null, "Rings Hell's bells."],
+      ['Summons Adds', 'Summons companions to the fight.', null, null, null, 'Raises hell.'],
       ['Boss Burst', 'A high-damage ability capable of wiping clustered or weakened players.'],
     ],
-    tips: ['Kill Flame Shapers and Priests immediately.', 'Use controlled damage and dedicated healers.'],
+    tips: ['Prioritize dangerous summons immediately.', 'Use controlled damage and dedicated healers.'],
   },
   {
     name: 'Kraul Hydra', type: 'Main Boss', location: 'Kraul Hive', slayer: 'Beastial', role: 'Heavy melee', confidence: 'medium', image: img('kraul-hydra.gif'),
@@ -113,10 +119,11 @@ export const bosses = [
     summary: 'A movement-discipline fight with two opposite reactions: freeze during Chain Lightning, then keep moving through Starfall.',
     abilities: [
       ['Chain Lightning', 'Repeatedly strikes in response to player movement across a very large area. Stop moving when Chain Lightning begins; additional movement causes additional strikes.'],
-      ['Starfall', 'Calls down a rapid barrage of stars that can kill a stationary player almost instantly. Move continuously until the Starfall sequence ends.'],
+      ['Starfall', 'Calls down a rapid barrage of stars that can kill a stationary player almost instantly. Move continuously until the Starfall sequence ends.', null, null, null, 'Conjures a shower of ghostly meteors.'],
+      ['Stars', 'Black stars fall from the sky.', 'MOVE', null, null, 'Draws deep from the ether.'],
       ['Paralysis', 'Lightning can paralyze players and interrupt spellcasting, making unnecessary movement during Chain Lightning even more dangerous.'],
       ['Hybrid AoE', 'Deals both physical and magical area damage.'],
-      ['Summoned Casters', 'Adds contribute additional area damage.'],
+      ['Summons Adds', 'Summons adds.', null, null, null, 'Summons minions.'],
     ],
     tips: ['Chain Lightning: stop moving until it ends.', 'Starfall: keep moving until it ends.', 'Keep the boss engaged in melee to reduce casts and assign dedicated healers.'],
   },
@@ -272,18 +279,12 @@ export const bosses = [
   },
   {
     name: 'Cistern Gorgon', type: 'Mini-Boss', location: 'Mausoleum', slayer: 'Elemental', role: 'Mobile control archer', confidence: 'medium', image: img('cistern-gorgon.jpg'),
-    summary: 'A control-heavy ranged fight featuring specialized arrows, petrification, persistent hazards, and frequent repositioning.',
+    summary: 'A ranged fight focused on summoned serpents and arrow volleys.',
     abilities: [
-      ['Entangling Arrow', 'Fires a blue control arrow that immobilizes its target. Be ready to survive hazards while rooted.'],
-      ['Adaptive Arrow Flurry', 'Repeats the most recently prepared special arrow as a multi-shot volley, spreading its root, poison, or resource-drain effect.'],
-      ['Focused Gaze', 'Petrifies a target while Stone Asp reinforcements enter the fight and stamina is pressured.'],
-      ['Toxic Arrow', 'Applies poison and can seed poisonous ground when repeated by the arrow flurry. Cure quickly and leave contaminated tiles.'],
-      ['Stirs the Water', 'Raises water geysers beneath the group. Move out of the marked impacts immediately.'],
-      ['Ice Storm', 'Calls down a persistent ice storm that damages players who remain inside.'],
-      ['Exhaustion Arrow', 'Drains stamina and mana, sharply limiting escape and recovery options.'],
-      ['Moves Like Quicksilver', 'Teleports to a new position, forcing the group to reacquire the boss and reset its formation.'],
+      ['Summons Serpents', 'Summons adds.', null, null, null, 'Releases serpents.'],
+      ['Arrows', 'Waves of arrows shoot from the boss.', null, null, null, 'Unleashes a torrent of arrows.'],
     ],
-    tips: ['Carry cures and reserve stamina for control effects.', 'Leave geysers, poison, and ice immediately.', 'Watch which special arrow is prepared before the next flurry.'],
+    tips: ['Clear summoned serpents before they overwhelm the group.', 'Watch the boss and avoid incoming arrow waves.'],
   },
   {
     name: 'Great Abyssal Hornbeast', type: 'Mini-Boss', location: 'Cavernam', slayer: 'Beastial', role: 'Melee', confidence: 'low', image: img('great-abyssal-hornbeast.jpg'),
@@ -294,6 +295,8 @@ export const bosses = [
     name: 'Gargoyle Archon', type: 'Mini-Boss', location: 'Shadowspire Cathedral', slayer: 'Daemonic', role: 'Add-control hybrid', confidence: 'medium', image: img('gargoyle-archon.jpg'),
     summary: 'A mobile hybrid fight whose real danger comes from damage-triggered ranged reinforcements and summoned statues.',
     abilities: [
+      ['Pane', 'Summons glass from the ceiling that drops after one second and deals damage.', 'MOVE', null, null, 'Brings a lot of pane.'],
+      ['Summons Adds', 'Summons companions to the fight.', null, null, null, 'Raises hell.'],
       ['Mobile Telegraphs', 'Uses avoidable area attacks that can be escaped by moving decisively away from the impact zone.'],
       ['Ranged Reinforcements', 'Summons hard-hitting ranged creatures that quickly overwhelm an unattended back line.'],
       ['Archon Statue', 'Creates a statue objective during the encounter. Clear it when stable, but prioritize dangerous live adds first.'],
@@ -314,6 +317,7 @@ export const bosses = [
     name: 'Oblivion Deathmage', type: 'Mini-Boss', location: 'Wilderness', slayer: 'Humanoid', role: 'High-resist summoner', confidence: 'medium', image: img('oblivion-deathmage.png'),
     summary: 'A damage-paced summoner fight where Phantoms can unleash a group-wiping arena attack if they survive too long.',
     abilities: [
+      ['Oblivion', 'Summons adds.', null, null, null, 'Gathers oblivion.'],
       ['Damage-Triggered Reinforcements', 'Summon waves are tied to damage dealt to the Deathmage, so the group can pause boss damage while stabilizing.'],
       ['Phantoms', 'Summons priority Phantoms that must be killed immediately.'],
       ['Phantom Arena Blast', 'A surviving Phantom can release a screen-wide area attack within roughly ten seconds, threatening the entire party.'],
@@ -333,6 +337,11 @@ export const bosses = [
     tips: ['Refill Oxygen before the pull.', 'Kill Drowned Gunners as they appear.', 'Keep moving when barrels or airborne sharks enter the arena.'],
   },
 ]
+
+export const bosses = rawBosses.map((boss) => ({
+  ...boss,
+  abilities: boss.abilities.map(ability),
+}))
 
 export const sources = [
   { label: 'Official main-boss roster', url: 'https://wiki.uooutlands.com/Bosses' },

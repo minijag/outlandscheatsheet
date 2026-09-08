@@ -106,7 +106,7 @@ function BossModal({ boss, onClose }) {
   }
 
   const toggleAllDetails = () => {
-    const detailedNames = boss.abilities.filter(([, , , detail]) => detail).map(([name]) => name)
+    const detailedNames = boss.abilities.filter(({ detail }) => detail).map(({ name }) => name)
     const allExpanded = detailedNames.every((name) => expandedAbilities.has(name))
     setExpandedAbilities(allExpanded ? new Set() : new Set(detailedNames))
   }
@@ -132,15 +132,15 @@ function BossModal({ boss, onClose }) {
         <section className="modal-section">
           <div className="mechanics-heading">
             <div className="section-kicker"><Sparkles /> Encounter mechanics</div>
-            {boss.abilities.some(([, , , detail]) => detail) && (
+            {boss.abilities.some(({ detail }) => detail) && (
               <button className="expand-all-button" onClick={toggleAllDetails}>
-                {boss.abilities.filter(([, , , detail]) => detail).every(([name]) => expandedAbilities.has(name)) ? 'Collapse details' : 'Expand details'}
+                {boss.abilities.filter(({ detail }) => detail).every(({ name }) => expandedAbilities.has(name)) ? 'Collapse details' : 'Expand details'}
               </button>
             )}
           </div>
           {boss.abilities.length ? (
             <div className="ability-list">
-              {boss.abilities.map(([name, text, action, detail, image], index) => (
+              {boss.abilities.map(({ name, text, action, detail, image, callout }, index) => (
                 <div className="ability" key={name}>
                   <span>{String(index + 1).padStart(2, '0')}</span>
                   <div>
@@ -149,6 +149,7 @@ function BossModal({ boss, onClose }) {
                       {action && <span className={`action-tag action-${action.toLowerCase()}`}>{action}</span>}
                     </div>
                     <p>{text}</p>
+                    {callout && <p className="ability-callout"><span>Boss callout</span> “{callout}”</p>}
                     {detail && (
                       <>
                         <button

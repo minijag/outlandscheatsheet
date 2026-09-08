@@ -170,6 +170,8 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .ability p { margin: 0; color: #929c9f; font-size: 12px; line-height: 1.65; }
 .ability-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
 .ability-heading h3 { margin: 0; }
+.ability-callout { margin-top: 9px !important; color: #b8c4ca !important; font-style: italic; }
+.ability-callout span { margin-right: 8px; color: var(--gold-bright); font-size: 9px; font-style: normal; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .action-tag { flex: 0 0 auto; padding: 4px 7px 3px; border: 1px solid; font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .12em; line-height: 1; }
 .action-move { color: #8fd5dc; border-color: rgba(91,190,201,.48); background: rgba(53,153,165,.12); }
 .action-click { color: var(--gold-bright); border-color: rgba(201,165,93,.5); background: rgba(201,165,93,.12); }
