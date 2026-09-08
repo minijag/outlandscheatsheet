@@ -1,3 +1,5 @@
+import journal from './journal-callouts.json' with { type: 'json' }
+
 const img = (file) => file ? `/bosses/${file}` : null
 const mechanic = (file) => file ? `/mechanics/${file}` : null
 const ability = ([name, text, action, detail, image, callout]) => ({ name, text, action, detail, image, callout: callout ?? null })
@@ -45,7 +47,7 @@ const rawBosses = [
     tips: ['Spread for the charge.', 'Clear summons before finishing the boss.'],
   },
   {
-    name: 'Aegis High Priest', type: 'Main Boss', location: 'Aegis Keep', slayer: 'Humanoid', role: 'Stealth melee / mage', confidence: 'medium', image: img('aegis-high-priest.gif'),
+    name: 'Aegis High Priestess', type: 'Main Boss', location: 'Aegis Keep', slayer: 'Humanoid', role: 'Stealth melee / mage', confidence: 'medium', image: img('aegis-high-priest.gif'),
     summary: 'A layered control fight featuring webs, blood magic, poison, and priority casters.',
     abilities: [
       ['Spider Transformation', 'Transforms into a giant spider and gains access to web attacks.'],
@@ -336,16 +338,55 @@ const rawBosses = [
     ],
     tips: ['Refill Oxygen before the pull.', 'Kill Drowned Gunners as they appear.', 'Keep moving when barrels or airborne sharks enter the arena.'],
   },
+  {
+    name: 'Broodbearer', type: 'Treasure', location: 'Wilderness', slayer: 'Monstrous', role: 'Melee / mage', confidence: 'low', image: img('broodbearer.jpg'), mobileImage: img('broodbearer.jpg'),
+    summary: 'A Level 8 Treasure Map Lore Boss with a melee/mage combat profile and lethal poison.',
+    abilities: [],
+    tips: ['Bring poison mitigation.', 'Expect both melee and spell pressure.'],
+  },
+  {
+    name: 'Echo Of A Lost Age', type: 'Treasure', location: 'Wilderness', slayer: 'Undead', role: 'Mage', confidence: 'low', image: img('echo-of-a-lost-age.png'), mobileImage: img('echo-of-a-lost-age.png'),
+    summary: 'A Level 8 Treasure Map Lore Boss with a high-resistance mage combat profile.',
+    abilities: [],
+    tips: ['Prepare for sustained spell pressure.', 'Bring an Undead slayer option.'],
+  },
+  {
+    name: 'Flamekeeper', type: 'Treasure', location: 'Wilderness', slayer: 'Daemonic', role: 'Melee / mage', confidence: 'low', image: img('flamekeeper.png'), mobileImage: img('flamekeeper.png'),
+    summary: 'A Level 8 Treasure Map Lore Boss with a daemonic melee/mage combat profile.',
+    abilities: [],
+    tips: ['Prepare for both melee and spell damage.', 'Bring a Daemonic slayer option.'],
+  },
 ]
 
-export const bosses = rawBosses.map((boss) => ({
-  ...boss,
-  abilities: boss.abilities.map(ability),
-}))
+export const bosses = rawBosses.map((boss) => {
+  const evidence = journal.bosses[boss.name] ?? {}
+  const abilities = boss.abilities.map(ability)
+  for (const [name, entry] of Object.entries(evidence)) {
+    if (!abilities.some((item) => item.name === name)) {
+      if (!entry.description) throw new Error(`Missing journal description: ${boss.name} / ${name}`)
+      abilities.push({
+        name, text: entry.description, journalDerived: true,
+        detail: 'Description inferred from the journal wording. Damage, targeting, duration, and counterplay have not been established by these callouts.',
+      })
+    }
+  }
+  return {
+    ...boss,
+    abilities: abilities.map((item) => ({
+      ...item,
+      callouts: evidence[item.name]?.callouts ?? [],
+      verification: evidence[item.name]?.callouts.length ? 'verified' : 'unverified',
+    })).sort((a, b) => {
+      if (a.verification !== b.verification) return a.verification === 'verified' ? -1 : 1
+      return a.verification === 'verified' ? a.name.localeCompare(b.name) : 0
+    }),
+  }
+})
 
 export const sources = [
   { label: 'Official main-boss roster', url: 'https://wiki.uooutlands.com/Bosses' },
   { label: 'Official mini-boss roster', url: 'https://wiki.uooutlands.com/Mini_Bosses' },
   { label: 'Official Omni Boss system', url: 'https://wiki.uooutlands.com/Omni_Bosses' },
+  { label: 'Official Treasure Boss roster', url: 'https://wiki.uooutlands.com/Lore_Bosses' },
   { label: 'Current boss scaling', url: 'https://wiki.uooutlands.com/Boss-Type_Creature' },
 ]

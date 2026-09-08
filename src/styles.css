@@ -92,6 +92,9 @@ h1 em { color: var(--gold-bright); font-style: normal; }
 .boss-card-omni .card-art { background: radial-gradient(circle at 50% 35%, #332a46, #11151b 68%); }
 .boss-card-omni .eyebrow span { color: #c6a7f0; }
 .boss-card-omni:hover { border-color: rgba(190,157,235,.7); }
+.boss-card-treasure { border-color: rgba(201,165,93,.52); }
+.boss-card-treasure .card-art { background: radial-gradient(circle at 50% 35%, #3a3020, #11151b 68%); }
+.boss-card-treasure .eyebrow span { color: var(--gold-bright); }
 .card-art { position: relative; height: 190px; padding: 18px; display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 50% 35%, #293236, #101619 66%); border-bottom: 1px solid var(--line); }
 .card-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,13,16,.62), transparent 55%); pointer-events: none; }
 .boss-art { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; max-width: none; max-height: none; object-fit: contain; object-position: center; image-rendering: auto; }
@@ -170,8 +173,16 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .ability p { margin: 0; color: #929c9f; font-size: 12px; line-height: 1.65; }
 .ability-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
 .ability-heading h3 { margin: 0; }
+.ability-heading { flex-wrap: wrap; justify-content: flex-start; }
+.verification-tag { font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 4px 7px; border: 1px solid; }
+.verification-verified { color: #9ce1b5; border-color: #3b7851; background: #162d21; }
+.verification-unverified { color: #e4be86; border-color: #866338; background: #302519; }
+.verification-note { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 12px 0 20px; }
+.callout-source { color: var(--muted); font-size: 11px; margin: 4px 0 10px; overflow-wrap: anywhere; }
+.callout-source summary { cursor: pointer; }
+.callout-source p { font-size: 11px; }
 .ability-callout { margin-top: 9px !important; color: #b8c4ca !important; font-style: italic; }
-.ability-callout span { margin-right: 8px; color: var(--gold-bright); font-size: 9px; font-style: normal; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.ability-callout span { margin-right: 8px; color: #e7e5df; font-size: 9px; font-style: normal; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .action-tag { flex: 0 0 auto; padding: 4px 7px 3px; border: 1px solid; font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .12em; line-height: 1; }
 .action-move { color: #8fd5dc; border-color: rgba(91,190,201,.48); background: rgba(53,153,165,.12); }
 .action-click { color: var(--gold-bright); border-color: rgba(201,165,93,.5); background: rgba(201,165,93,.12); }

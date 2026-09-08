@@ -1,0 +1,3317 @@
+{
+  "generatedFrom": "2026-09-08T13:50:46.195125-07:00",
+  "bosses": {
+    "Behemoth Basilisk": {
+      "Calls for Aid": {
+        "description": "Calls for assistance, suggesting a reinforcement cue.",
+        "callouts": [
+          {
+            "phrase": "*calls for aid*",
+            "count": 85,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 6790,
+            "timestamp": "02/02/2026 12:55"
+          }
+        ]
+      },
+      "Debilitating Slime": {
+        "description": "Announces a spray of debilitating slime.",
+        "callouts": [
+          {
+            "phrase": "*sprays a shower of debilitating of slime*",
+            "count": 13,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 6941,
+            "timestamp": "02/02/2026 12:56"
+          },
+          {
+            "phrase": "*sprays debilitating slime*",
+            "count": 1,
+            "source": "2026_06_05_17_39_39_journal.txt",
+            "line": 34496,
+            "timestamp": "06/05/2026 19:43"
+          }
+        ]
+      },
+      "Menacing Gaze": {
+        "description": "Fixes a menacing gaze; the affected target and resulting effect are unknown.",
+        "callouts": [
+          {
+            "phrase": "*gazes menacingly*",
+            "count": 11,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 51876,
+            "timestamp": "02/02/2026 16:45"
+          }
+        ]
+      },
+      "Strange Shards": {
+        "description": "Flings a shower of strange shards.",
+        "callouts": [
+          {
+            "phrase": "*flings a shower of strange shards*",
+            "count": 8,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 52907,
+            "timestamp": "02/02/2026 16:47"
+          }
+        ]
+      },
+      "Regurgitated Stones": {
+        "description": "Regurgitates strange stones, sometimes announced as many stones.",
+        "callouts": [
+          {
+            "phrase": "*regurgitates many strange stones*",
+            "count": 8,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 7563,
+            "timestamp": "02/02/2026 12:57"
+          },
+          {
+            "phrase": "*regurgitates strange stones*",
+            "count": 1,
+            "source": "2026_02_26_16_10_48_journal.txt",
+            "line": 2163,
+            "timestamp": "02/26/2026 16:22"
+          }
+        ]
+      },
+      "Tail Lash": {
+        "description": "Lashes its tail wildly.",
+        "callouts": [
+          {
+            "phrase": "*lashes tail wildly*",
+            "count": 6,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 6039,
+            "timestamp": "02/02/2026 12:53"
+          }
+        ]
+      },
+      "Screech": {
+        "description": "Screeches; any additional effect is not established by the announcement.",
+        "callouts": [
+          {
+            "phrase": "*screeches maddeningly*",
+            "count": 5,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 5855,
+            "timestamp": "02/02/2026 12:53"
+          },
+          {
+            "phrase": "*screeches*",
+            "count": 2,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 24309,
+            "timestamp": "03/30/2026 11:09"
+          }
+        ]
+      }
+    },
+    "Infernus": {
+      "Infernal Summons": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*raises hell*",
+            "count": 49,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 9848,
+            "timestamp": "02/02/2026 13:12"
+          }
+        ]
+      },
+      "Flame Rifts": {
+        "description": "Announces the creation of one or several flame rifts.",
+        "callouts": [
+          {
+            "phrase": "*creates several flame rifts*",
+            "count": 7,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 10876,
+            "timestamp": "02/02/2026 13:13"
+          },
+          {
+            "phrase": "*creates flame rift*",
+            "count": 2,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 14153,
+            "timestamp": "05/03/2026 14:43"
+          }
+        ]
+      },
+      "Flaming Fury": {
+        "description": "Announces a release of fury, with a flaming variant.",
+        "callouts": [
+          {
+            "phrase": "*unleashes flaming fury*",
+            "count": 7,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 11717,
+            "timestamp": "02/02/2026 13:14"
+          },
+          {
+            "phrase": "*unleashes fury*",
+            "count": 3,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 9951,
+            "timestamp": "05/03/2026 14:33"
+          }
+        ]
+      },
+      "Inferno": {
+        "description": "Announces a summoned inferno.",
+        "callouts": [
+          {
+            "phrase": "*summons inferno*",
+            "count": 6,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 9470,
+            "timestamp": "02/02/2026 13:11"
+          }
+        ]
+      },
+      "Hellfire": {
+        "description": "Calls down hellfire, sometimes described as almighty.",
+        "callouts": [
+          {
+            "phrase": "*calls down almighty hellfire*",
+            "count": 5,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 42764,
+            "timestamp": "02/21/2026 12:51"
+          },
+          {
+            "phrase": "*calls down hellfire*",
+            "count": 5,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 10357,
+            "timestamp": "05/03/2026 14:34"
+          }
+        ]
+      },
+      "Earth Carving": {
+        "description": "Carves the earth, with a variant extending to the core.",
+        "callouts": [
+          {
+            "phrase": "*carves the earth to the core*",
+            "count": 4,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 9591,
+            "timestamp": "05/03/2026 14:32"
+          },
+          {
+            "phrase": "*carves the earth*",
+            "count": 2,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 14047,
+            "timestamp": "05/03/2026 14:43"
+          }
+        ]
+      },
+      "Rage Explosion": {
+        "description": "Announces an explosion of rage.",
+        "callouts": [
+          {
+            "phrase": "*explodes with rage*",
+            "count": 1,
+            "source": "2026_05_01_16_25_44_journal.txt",
+            "line": 28840,
+            "timestamp": "05/01/2026 17:33"
+          }
+        ]
+      },
+      "Summoned Flames": {
+        "description": "Announces summoned flames.",
+        "callouts": [
+          {
+            "phrase": "*summons flames*",
+            "count": 1,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 11326,
+            "timestamp": "05/03/2026 14:36"
+          }
+        ]
+      }
+    },
+    "Great Sunken Serpent": {
+      "Ranged Reinforcements": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*sends a call to the deep*",
+            "count": 79,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 7274,
+            "timestamp": "01/28/2026 13:27"
+          }
+        ]
+      },
+      "Tidal Floor": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*stirs the water violently*",
+            "count": 8,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 7897,
+            "timestamp": "01/28/2026 13:29"
+          },
+          {
+            "phrase": "*stirs the water*",
+            "count": 1,
+            "source": "2026_05_01_19_03_51_journal.txt",
+            "line": 2532,
+            "timestamp": "05/01/2026 19:10"
+          }
+        ]
+      },
+      "Deep Breath": {
+        "description": "Draws a deep breath as a possible wind-up cue.",
+        "callouts": [
+          {
+            "phrase": "*breathes extremely deeply*",
+            "count": 6,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 7079,
+            "timestamp": "01/28/2026 13:26"
+          }
+        ]
+      },
+      "Earth Shaking": {
+        "description": "Announces shaking the earth, sometimes violently.",
+        "callouts": [
+          {
+            "phrase": "*violently shakes the earth*",
+            "count": 6,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 8218,
+            "timestamp": "01/28/2026 13:31"
+          },
+          {
+            "phrase": "*shakes the earth*",
+            "count": 1,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 6898,
+            "timestamp": "01/28/2026 13:26"
+          }
+        ]
+      },
+      "Circling": {
+        "description": "Circles rapidly or feverishly.",
+        "callouts": [
+          {
+            "phrase": "*circles feverishly*",
+            "count": 4,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 8139,
+            "timestamp": "01/28/2026 13:30"
+          },
+          {
+            "phrase": "*circles rapidly*",
+            "count": 2,
+            "source": "2026_02_28_09_26_10_journal.txt",
+            "line": 30563,
+            "timestamp": "02/28/2026 13:46"
+          }
+        ]
+      }
+    },
+    "Emperor Dragon": {
+      "Draconic Summons": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*calls for aid*",
+            "count": 51,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 14598,
+            "timestamp": "02/02/2026 13:30"
+          }
+        ]
+      },
+      "Feed": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*begins to feed ravenously*",
+            "count": 7,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 87206,
+            "timestamp": "02/21/2026 14:45"
+          },
+          {
+            "phrase": "*begins to feed*",
+            "count": 1,
+            "source": "2026_04_24_17_38_47_journal.txt",
+            "line": 73959,
+            "timestamp": "04/24/2026 21:44"
+          }
+        ]
+      },
+      "Flamemark": {
+        "description": "Places a flamemark, with a powerful variant.",
+        "callouts": [
+          {
+            "phrase": "*places powerful flamemark*",
+            "count": 5,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 15276,
+            "timestamp": "02/02/2026 13:31"
+          },
+          {
+            "phrase": "*places flamemark*",
+            "count": 1,
+            "source": "2026_03_28_16_49_48_journal.txt",
+            "line": 3528,
+            "timestamp": "03/28/2026 17:15"
+          }
+        ]
+      },
+      "Long Deep Breath": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*takes a long, deep breath*",
+            "count": 4,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 14344,
+            "timestamp": "02/02/2026 13:29"
+          }
+        ]
+      },
+      "Wing Beats": {
+        "description": "Beats its massive wings furiously.",
+        "callouts": [
+          {
+            "phrase": "*beats massive wings furiously*",
+            "count": 3,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 87621,
+            "timestamp": "02/21/2026 14:45"
+          }
+        ]
+      },
+      "Massive Breath": {
+        "description": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+        "callouts": [
+          {
+            "phrase": "*takes an incredibly massive breath*",
+            "count": 3,
+            "source": "2026_03_03_17_47_59_journal.txt",
+            "line": 58468,
+            "timestamp": "03/04/2026 13:41"
+          },
+          {
+            "phrase": "*takes a massive breath*",
+            "count": 1,
+            "source": "2026_03_03_17_47_59_journal.txt",
+            "line": 58269,
+            "timestamp": "03/04/2026 13:40"
+          }
+        ]
+      },
+      "Charge": {
+        "description": "Announces a charge.",
+        "callouts": [
+          {
+            "phrase": "*begins to charge wildly*",
+            "count": 2,
+            "source": "2026_09_08_10_39_26_journal.txt",
+            "line": 11361,
+            "timestamp": "09/08/2026 11:46"
+          },
+          {
+            "phrase": "*begins to charge*",
+            "count": 1,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 14213,
+            "timestamp": "02/02/2026 13:29"
+          }
+        ]
+      },
+      "Dragon Breath": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*takes a deep breath*",
+            "count": 1,
+            "source": "2026_05_10_07_15_49_journal.txt",
+            "line": 38220,
+            "timestamp": "05/10/2026 10:06"
+          }
+        ]
+      }
+    },
+    "Aegis High Priestess": {
+      "Living Blood": {
+        "description": "Brings blood to life, suggesting an animation or summon.",
+        "callouts": [
+          {
+            "phrase": "*brings blood to life*",
+            "count": 129,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 36950,
+            "timestamp": "02/07/2026 13:30"
+          }
+        ]
+      },
+      "Web": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*spins gigantic web trails*",
+            "count": 22,
+            "source": "2026_02_23_09_54_37_journal.txt",
+            "line": 48330,
+            "timestamp": "02/23/2026 16:42"
+          }
+        ]
+      },
+      "Blood Magic": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*spins a bloody mess*",
+            "count": 18,
+            "source": "2026_02_25_23_58_26_journal.txt",
+            "line": 79007,
+            "timestamp": "02/26/2026 16:07"
+          }
+        ]
+      },
+      "Spider Transformation": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*shapeshifts*",
+            "count": 17,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 36596,
+            "timestamp": "02/07/2026 13:30"
+          }
+        ]
+      },
+      "Poison Saliva": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*spits vile venom*",
+            "count": 15,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 37710,
+            "timestamp": "02/07/2026 13:31"
+          }
+        ]
+      },
+      "Scythe Spin": {
+        "description": "Spins a scythe, with a violent variant. The callout does not establish its reach or damage.",
+        "callouts": [
+          {
+            "phrase": "*spins scythe violently*",
+            "count": 6,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 36326,
+            "timestamp": "02/07/2026 13:29"
+          },
+          {
+            "phrase": "*spins scythe*",
+            "count": 2,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 14220,
+            "timestamp": "03/30/2026 10:43"
+          }
+        ]
+      },
+      "Chaos Signs": {
+        "description": "Forms multiple chaos signs. Their effects and how players interact with them are not established by the wording.",
+        "callouts": [
+          {
+            "phrase": "*forms many chaos signs*",
+            "count": 5,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 9946,
+            "timestamp": "03/27/2026 11:45"
+          },
+          {
+            "phrase": "*forms several chaotic signs*",
+            "count": 4,
+            "source": "2026_05_01_16_25_44_journal.txt",
+            "line": 35661,
+            "timestamp": "05/01/2026 17:48"
+          }
+        ]
+      },
+      "Spin Out": {
+        "description": "Announces spinning out; its movement pattern and resulting effect are unknown.",
+        "callouts": [
+          {
+            "phrase": "*spins out*",
+            "count": 1,
+            "source": "2026_05_07_10_04_50_journal.txt",
+            "line": 2035,
+            "timestamp": "05/07/2026 10:27"
+          }
+        ]
+      }
+    },
+    "Lord Bile": {
+      "Regurgitated Meals": {
+        "description": "Regurgitates previous meals; the log does not identify what appears.",
+        "callouts": [
+          {
+            "phrase": "*regurgitates previous meals*",
+            "count": 17,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 38369,
+            "timestamp": "02/21/2026 12:38"
+          }
+        ]
+      },
+      "Stomach Rumble": {
+        "description": "Its stomach begins to rumble, sometimes violently.",
+        "callouts": [
+          {
+            "phrase": "*stomach begins to rumble violently*",
+            "count": 7,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 38899,
+            "timestamp": "02/21/2026 12:39"
+          },
+          {
+            "phrase": "*stomach begins to rumble*",
+            "count": 1,
+            "source": "2026_04_26_08_57_41_journal.txt",
+            "line": 1267,
+            "timestamp": "04/26/2026 09:05"
+          }
+        ]
+      },
+      "Discomfort": {
+        "description": "Looks uncomfortable or extremely uncomfortable, suggesting a wind-up cue.",
+        "callouts": [
+          {
+            "phrase": "*looks extremely uncomfortable*",
+            "count": 3,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 37777,
+            "timestamp": "02/21/2026 12:36"
+          },
+          {
+            "phrase": "*looks uncomfortable*",
+            "count": 1,
+            "source": "2026_06_08_07_42_17_journal.txt",
+            "line": 27505,
+            "timestamp": "06/08/2026 10:29"
+          }
+        ]
+      },
+      "Pink Vomit": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*vomits profusely*",
+            "count": 2,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 39736,
+            "timestamp": "02/21/2026 12:40"
+          },
+          {
+            "phrase": "*vomits*",
+            "count": 2,
+            "source": "2026_04_26_08_57_41_journal.txt",
+            "line": 1099,
+            "timestamp": "04/26/2026 09:04"
+          }
+        ]
+      },
+      "Built-Up Gas": {
+        "description": "Releases a large amount of built-up gas.",
+        "callouts": [
+          {
+            "phrase": "*releases a lot of built up gas*",
+            "count": 1,
+            "source": "2026_04_26_08_57_41_journal.txt",
+            "line": 1892,
+            "timestamp": "04/26/2026 09:06"
+          }
+        ]
+      }
+    },
+    "Ocean's Fury": {
+      "Sea Call": {
+        "description": "Issues a sea call, suggesting a reinforcement signal.",
+        "callouts": [
+          {
+            "phrase": "*issues sea call*",
+            "count": 7,
+            "source": "2026_01_30_21_09_18_journal.txt",
+            "line": 43187,
+            "timestamp": "01/31/2026 09:17"
+          }
+        ]
+      },
+      "Typhoon": {
+        "description": "Gathers an epic typhoon.",
+        "callouts": [
+          {
+            "phrase": "*gathers an epic typhoon*",
+            "count": 1,
+            "source": "2026_01_30_21_09_18_journal.txt",
+            "line": 43434,
+            "timestamp": "01/31/2026 09:18"
+          }
+        ]
+      }
+    },
+    "Forgotten King": {
+      "Undead Reinforcements": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*rallies long-dead bannermen*",
+            "count": 123,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 47165,
+            "timestamp": "02/07/2026 13:58"
+          }
+        ]
+      },
+      "Strange Ritual": {
+        "description": "Begins a strange ritual, with an intensified variant.",
+        "callouts": [
+          {
+            "phrase": "*begins very strange ritual*",
+            "count": 17,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 46481,
+            "timestamp": "02/07/2026 13:57"
+          },
+          {
+            "phrase": "*begins strange ritual*",
+            "count": 2,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 78426,
+            "timestamp": "02/16/2026 17:34"
+          }
+        ]
+      },
+      "Bone Blades": {
+        "description": "Fashions bone blades, sometimes a full panoply.",
+        "callouts": [
+          {
+            "phrase": "*fashions a panoply of bone blades*",
+            "count": 16,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 47551,
+            "timestamp": "02/07/2026 13:59"
+          },
+          {
+            "phrase": "*fashions bone blades*",
+            "count": 2,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 78281,
+            "timestamp": "02/21/2026 14:16"
+          }
+        ]
+      },
+      "Offerings": {
+        "description": "Makes several offerings or a grand offering.",
+        "callouts": [
+          {
+            "phrase": "*makes a grand offering*",
+            "count": 16,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 46719,
+            "timestamp": "02/07/2026 13:58"
+          },
+          {
+            "phrase": "*makes several offerings*",
+            "count": 1,
+            "source": "2026_03_03_17_47_59_journal.txt",
+            "line": 50539,
+            "timestamp": "03/04/2026 13:09"
+          }
+        ]
+      },
+      "Spike Traps": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*prepares a managerie of bone skewers*",
+            "count": 15,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 48229,
+            "timestamp": "02/07/2026 14:01"
+          },
+          {
+            "phrase": "*prepares bone skewers*",
+            "count": 1,
+            "source": "2026_02_28_09_26_10_journal.txt",
+            "line": 35432,
+            "timestamp": "02/28/2026 14:03"
+          }
+        ]
+      },
+      "Mummification": {
+        "description": "Begins mummification, sometimes announced as mass mummification.",
+        "callouts": [
+          {
+            "phrase": "*begins mass mummification*",
+            "count": 10,
+            "source": "2026_02_28_09_26_10_journal.txt",
+            "line": 36836,
+            "timestamp": "02/28/2026 14:05"
+          },
+          {
+            "phrase": "*begins mummification*",
+            "count": 2,
+            "source": "2026_04_24_17_38_47_journal.txt",
+            "line": 70204,
+            "timestamp": "04/24/2026 21:27"
+          }
+        ]
+      },
+      "Gathered Bones": {
+        "description": "Gathers bones or a mass of bones.",
+        "callouts": [
+          {
+            "phrase": "*gathers a mass of bones*",
+            "count": 7,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 79019,
+            "timestamp": "02/16/2026 17:35"
+          },
+          {
+            "phrase": "*gathers bones*",
+            "count": 7,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 22176,
+            "timestamp": "03/27/2026 12:11"
+          }
+        ]
+      },
+      "Cursed Status": {
+        "description": "The boss is annotated as cursed. This may be an applied status rather than an outgoing ability.",
+        "callouts": [
+          {
+            "phrase": "*cursed*",
+            "count": 2,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 46735,
+            "timestamp": "02/07/2026 13:58"
+          }
+        ]
+      }
+    },
+    "Gargoyle Primogen": {
+      "Summons Adds": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*raises hell*",
+            "count": 63,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 38069,
+            "timestamp": "01/31/2026 13:53"
+          }
+        ]
+      },
+      "Stonecrafting Masterwork": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*begins a stonecrafting masterwork*",
+            "count": 20,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 39380,
+            "timestamp": "01/31/2026 13:56"
+          },
+          {
+            "phrase": "*begins stonecrafting*",
+            "count": 6,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 37897,
+            "timestamp": "01/31/2026 13:52"
+          }
+        ]
+      },
+      "Immolation Runes": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*forges a torrent of immolation runes*",
+            "count": 20,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 37982,
+            "timestamp": "01/31/2026 13:53"
+          },
+          {
+            "phrase": "*forges immolation runes*",
+            "count": 3,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 39877,
+            "timestamp": "01/31/2026 13:57"
+          }
+        ]
+      },
+      "Monument Pillaging": {
+        "description": "Pillages monuments, with a variant announcing razing and pillaging.",
+        "callouts": [
+          {
+            "phrase": "*razes and pillages monuments*",
+            "count": 16,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 38886,
+            "timestamp": "01/31/2026 13:54"
+          },
+          {
+            "phrase": "*pillages monuments*",
+            "count": 5,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 39807,
+            "timestamp": "01/31/2026 13:57"
+          }
+        ]
+      },
+      "Intimidated Status": {
+        "description": "The boss is annotated as intimidated. This may be an applied status rather than an outgoing ability.",
+        "callouts": [
+          {
+            "phrase": "*intimidated*",
+            "count": 15,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 38948,
+            "timestamp": "01/31/2026 13:55"
+          }
+        ]
+      },
+      "Hell's Bells": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*rings a cacophany of hell's bells*",
+            "count": 15,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 66491,
+            "timestamp": "02/16/2026 16:59"
+          },
+          {
+            "phrase": "*rings hell's bells*",
+            "count": 6,
+            "source": "2026_02_23_17_04_43_journal.txt",
+            "line": 6420,
+            "timestamp": "02/23/2026 17:24"
+          }
+        ]
+      },
+      "Death's Head": {
+        "description": "Raises a death's head, sometimes described as fatal.",
+        "callouts": [
+          {
+            "phrase": "*raises fatal death's head*",
+            "count": 13,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 38206,
+            "timestamp": "01/31/2026 13:53"
+          },
+          {
+            "phrase": "*raises death's head*",
+            "count": 2,
+            "source": "2026_05_18_12_26_32_journal.txt",
+            "line": 19568,
+            "timestamp": "05/18/2026 13:20"
+          }
+        ]
+      },
+      "Static": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*releases overcharged static*",
+            "count": 10,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 64464,
+            "timestamp": "02/16/2026 16:56"
+          },
+          {
+            "phrase": "*releases charged static*",
+            "count": 5,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 66740,
+            "timestamp": "02/16/2026 17:00"
+          }
+        ]
+      }
+    },
+    "Kraul Hydra": {
+      "Snakecharm": {
+        "description": "A snakecharm announcement appears on the boss; its origin and effect are not established.",
+        "callouts": [
+          {
+            "phrase": "*snakecharm*",
+            "count": 89,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 17845,
+            "timestamp": "01/31/2026 12:33"
+          }
+        ]
+      },
+      "Strange Orbs": {
+        "description": "Unleashes strange orbs, sometimes in a flurry.",
+        "callouts": [
+          {
+            "phrase": "*unleashes a flurry of strange orbs*",
+            "count": 18,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 18562,
+            "timestamp": "01/31/2026 12:34"
+          },
+          {
+            "phrase": "*unleases strange orbs*",
+            "count": 1,
+            "source": "2026_05_15_21_01_51_journal.txt",
+            "line": 156240,
+            "timestamp": "05/16/2026 17:06"
+          }
+        ]
+      },
+      "Deep Breath": {
+        "description": "Draws a deep breath as a possible wind-up cue.",
+        "callouts": [
+          {
+            "phrase": "*takes a long, deep breath*",
+            "count": 15,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 17575,
+            "timestamp": "01/31/2026 12:33"
+          }
+        ]
+      },
+      "Snake Pits": {
+        "description": "Creates snake pits, sometimes a swarm of them.",
+        "callouts": [
+          {
+            "phrase": "*create a swarm of snake pits*",
+            "count": 14,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 18009,
+            "timestamp": "01/31/2026 12:33"
+          },
+          {
+            "phrase": "*creates snake pits*",
+            "count": 1,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 25809,
+            "timestamp": "02/07/2026 12:57"
+          }
+        ]
+      },
+      "Coiled Energy": {
+        "description": "Releases coiled energy, with a torrent variant.",
+        "callouts": [
+          {
+            "phrase": "*releases a torrent of coiled energy*",
+            "count": 12,
+            "source": "2026_05_01_16_25_44_journal.txt",
+            "line": 46851,
+            "timestamp": "05/01/2026 18:11"
+          },
+          {
+            "phrase": "*releases coiled energy*",
+            "count": 1,
+            "source": "2026_05_15_21_01_51_journal.txt",
+            "line": 156891,
+            "timestamp": "05/16/2026 17:07"
+          }
+        ]
+      },
+      "Glowmark Status": {
+        "description": "A glowmark annotation appears on the boss; its origin is not established.",
+        "callouts": [
+          {
+            "phrase": "*glowmark*",
+            "count": 8,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 17927,
+            "timestamp": "01/31/2026 12:33"
+          }
+        ]
+      },
+      "Body Storm": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*uncoils a devastating tempest*",
+            "count": 8,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 26472,
+            "timestamp": "02/07/2026 12:58"
+          },
+          {
+            "phrase": "*uncoils tempest*",
+            "count": 2,
+            "source": "2026_05_01_16_25_44_journal.txt",
+            "line": 46586,
+            "timestamp": "05/01/2026 18:11"
+          }
+        ]
+      }
+    },
+    "Gatekeeper": {
+      "Summons Adds": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*summons minions*",
+            "count": 71,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 22713,
+            "timestamp": "01/31/2026 12:52"
+          }
+        ]
+      },
+      "Starfall": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*conjures a shower of ghostly meteors*",
+            "count": 11,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 48711,
+            "timestamp": "02/02/2026 16:35"
+          },
+          {
+            "phrase": "*conjures ghostly meteors*",
+            "count": 1,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 26755,
+            "timestamp": "03/27/2026 12:21"
+          }
+        ]
+      },
+      "Stars": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*draws deep from the ether*",
+            "count": 9,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 22419,
+            "timestamp": "01/31/2026 12:52"
+          }
+        ]
+      },
+      "Eldritch Power": {
+        "description": "Unleashes a torrent of eldritch power.",
+        "callouts": [
+          {
+            "phrase": "*unleashes a torrent of eldritch power*",
+            "count": 7,
+            "source": "2026_02_28_09_26_10_journal.txt",
+            "line": 18994,
+            "timestamp": "02/28/2026 13:10"
+          }
+        ]
+      },
+      "Arcane Spheres": {
+        "description": "Creates a battery of arcane spheres.",
+        "callouts": [
+          {
+            "phrase": "*creates a battery of arcane spheres*",
+            "count": 6,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 52002,
+            "timestamp": "02/07/2026 14:14"
+          }
+        ]
+      },
+      "Balefire": {
+        "description": "Wields balefire, with a wild variant.",
+        "callouts": [
+          {
+            "phrase": "*wields wild balefire*",
+            "count": 4,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 52941,
+            "timestamp": "02/07/2026 14:15"
+          },
+          {
+            "phrase": "*wields balefire*",
+            "count": 2,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 72867,
+            "timestamp": "05/03/2026 23:31"
+          }
+        ]
+      },
+      "Mirror Images": {
+        "description": "Forms several mirror images.",
+        "callouts": [
+          {
+            "phrase": "*forms several mirror images*",
+            "count": 3,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 48484,
+            "timestamp": "02/02/2026 16:34"
+          }
+        ]
+      },
+      "Chain Lightning": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*harnesses a storm of lightning*",
+            "count": 3,
+            "source": "2026_02_12_15_07_43_journal.txt",
+            "line": 5744,
+            "timestamp": "02/12/2026 16:52"
+          },
+          {
+            "phrase": "*harnesses lightning*",
+            "count": 1,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 74242,
+            "timestamp": "05/03/2026 23:34"
+          }
+        ]
+      }
+    },
+    "Terathan Goliath": {
+      "Swarm Summons": {
+        "description": "Summons a swarm; the announcement does not identify its creatures.",
+        "callouts": [
+          {
+            "phrase": "*summons the swarm*",
+            "count": 36,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 15356,
+            "timestamp": "03/27/2026 11:56"
+          }
+        ]
+      },
+      "Acid Spray": {
+        "description": "Sprays a torrent of acid.",
+        "callouts": [
+          {
+            "phrase": "*sprays a torrent of acid*",
+            "count": 5,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 15463,
+            "timestamp": "03/27/2026 11:57"
+          }
+        ]
+      },
+      "Spine Volley": {
+        "description": "Releases a flurry of spines.",
+        "callouts": [
+          {
+            "phrase": "*releases a flurry of spines*",
+            "count": 4,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 7960,
+            "timestamp": "03/30/2026 10:26"
+          }
+        ]
+      },
+      "Infectious Spores": {
+        "description": "Shoots a cloud of infectious spores.",
+        "callouts": [
+          {
+            "phrase": "*shoots a cloud of infectious spores*",
+            "count": 4,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 16217,
+            "timestamp": "03/27/2026 11:58"
+          }
+        ]
+      },
+      "Cave-In": {
+        "description": "Starts a cave-in, sometimes described as deadly.",
+        "callouts": [
+          {
+            "phrase": "*starts a deadly cave in*",
+            "count": 3,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 18167,
+            "timestamp": "03/27/2026 12:00"
+          },
+          {
+            "phrase": "*starts a cave in*",
+            "count": 1,
+            "source": "2026_04_28_10_25_58_journal.txt",
+            "line": 12376,
+            "timestamp": "04/28/2026 11:17"
+          }
+        ]
+      },
+      "Falling Stalactites": {
+        "description": "Brings down stalactites, sometimes as a shower.",
+        "callouts": [
+          {
+            "phrase": "*brings down a shower of stalactites*",
+            "count": 1,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 14814,
+            "timestamp": "03/27/2026 11:56"
+          },
+          {
+            "phrase": "*brings down stalactites*",
+            "count": 1,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 7414,
+            "timestamp": "03/30/2026 10:25"
+          }
+        ]
+      },
+      "Burrowing Ants": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*sends massive vibrations below*",
+            "count": 1,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 9828,
+            "timestamp": "03/30/2026 10:30"
+          }
+        ]
+      }
+    },
+    "Stygian Gaoler": {
+      "Prison Reinforcements": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*sounds alarm*",
+            "count": 100,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 72060,
+            "timestamp": "02/16/2026 17:19"
+          }
+        ]
+      },
+      "Gaolbreak": {
+        "description": "Announces a gaolbreak or wild gaolbreak.",
+        "callouts": [
+          {
+            "phrase": "*wild gaolbreak*",
+            "count": 38,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 71890,
+            "timestamp": "02/16/2026 17:18"
+          },
+          {
+            "phrase": "*gaolbreak*",
+            "count": 20,
+            "source": "2026_03_29_18_44_20_journal.txt",
+            "line": 11127,
+            "timestamp": "03/29/2026 19:20"
+          }
+        ]
+      },
+      "Suppression Blast": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*engages a wave of suppression fields*",
+            "count": 33,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 59911,
+            "timestamp": "02/21/2026 13:23"
+          },
+          {
+            "phrase": "*engages suppression fields*",
+            "count": 14,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 75257,
+            "timestamp": "02/16/2026 17:23"
+          }
+        ]
+      },
+      "Searchlights": {
+        "description": "Engages searchlights, sometimes in a sweep.",
+        "callouts": [
+          {
+            "phrase": "*engages sweep of searchlights*",
+            "count": 26,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 73866,
+            "timestamp": "02/16/2026 17:21"
+          },
+          {
+            "phrase": "*engages searchlights*",
+            "count": 15,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 71647,
+            "timestamp": "02/16/2026 17:18"
+          }
+        ]
+      },
+      "Stygian Energy": {
+        "description": "Unleashes stygian energy, with a massive variant.",
+        "callouts": [
+          {
+            "phrase": "*unleashes stygian energy*",
+            "count": 26,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 60660,
+            "timestamp": "02/21/2026 13:25"
+          },
+          {
+            "phrase": "*unleashes massive stygian energy*",
+            "count": 24,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 72482,
+            "timestamp": "02/16/2026 17:19"
+          }
+        ]
+      },
+      "Imprisonment": {
+        "description": "Begins imprisonment, with a lengthy variant.",
+        "callouts": [
+          {
+            "phrase": "*begins lengthy imprisonment*",
+            "count": 22,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 71815,
+            "timestamp": "02/16/2026 17:18"
+          },
+          {
+            "phrase": "*begins imprisonment*",
+            "count": 16,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 74865,
+            "timestamp": "02/16/2026 17:23"
+          }
+        ]
+      },
+      "Turned to Stone": {
+        "description": "A turned-to-stone annotation appears; the log does not identify the affected target.",
+        "callouts": [
+          {
+            "phrase": "*turned to stone*",
+            "count": 11,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 73270,
+            "timestamp": "02/16/2026 17:20"
+          }
+        ]
+      },
+      "Lockdown": {
+        "description": "Initiates lockdown, with a rapid variant; the original log spells this 'initates'.",
+        "callouts": [
+          {
+            "phrase": "*initates lockdown*",
+            "count": 5,
+            "source": "2026_05_07_10_04_50_journal.txt",
+            "line": 26887,
+            "timestamp": "05/07/2026 11:32"
+          },
+          {
+            "phrase": "*initates rapid lockdown*",
+            "count": 3,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 75597,
+            "timestamp": "02/16/2026 17:24"
+          }
+        ]
+      }
+    },
+    "Undermind": {
+      "Reinforcement Call": {
+        "description": "Announces 'raises hell', suggesting a reinforcement cue.",
+        "callouts": [
+          {
+            "phrase": "*raises hell*",
+            "count": 107,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 28573,
+            "timestamp": "01/31/2026 13:12"
+          }
+        ]
+      },
+      "Breath of the Deep": {
+        "description": "Announces a breath of the deep, sometimes a long breath.",
+        "callouts": [
+          {
+            "phrase": "*long breath of the deep*",
+            "count": 40,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 28665,
+            "timestamp": "01/31/2026 13:12"
+          },
+          {
+            "phrase": "*breath of the deep*",
+            "count": 19,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 40194,
+            "timestamp": "03/27/2026 12:54"
+          }
+        ]
+      },
+      "Mindshrooms": {
+        "description": "Spews mindshrooms, with a massive variant.",
+        "callouts": [
+          {
+            "phrase": "*spews massive mindshrooms*",
+            "count": 33,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 29916,
+            "timestamp": "01/31/2026 13:15"
+          },
+          {
+            "phrase": "*spews mindshrooms*",
+            "count": 14,
+            "source": "2026_02_12_15_07_43_journal.txt",
+            "line": 11752,
+            "timestamp": "02/12/2026 17:19"
+          }
+        ]
+      },
+      "Brain Coral": {
+        "description": "Unleashes brain coral, sometimes a slew of it.",
+        "callouts": [
+          {
+            "phrase": "*unleashes a slew of brain coral*",
+            "count": 27,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 57631,
+            "timestamp": "02/02/2026 17:09"
+          },
+          {
+            "phrase": "*unleashes brain coral*",
+            "count": 23,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 59427,
+            "timestamp": "02/18/2026 13:50"
+          }
+        ]
+      },
+      "Drowned Monoliths": {
+        "description": "Raises drowned monoliths, sometimes a swathe of them.",
+        "callouts": [
+          {
+            "phrase": "*raises a swathe of drowned monoliths*",
+            "count": 26,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 28485,
+            "timestamp": "01/31/2026 13:12"
+          },
+          {
+            "phrase": "*raises drowned monoliths*",
+            "count": 18,
+            "source": "2026_03_27_09_51_08_journal.txt",
+            "line": 43323,
+            "timestamp": "03/27/2026 13:00"
+          }
+        ]
+      },
+      "Extended Maw": {
+        "description": "Extends its maw, with a hungry variant.",
+        "callouts": [
+          {
+            "phrase": "*hungrily extends maw*",
+            "count": 25,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 28332,
+            "timestamp": "01/31/2026 13:11"
+          },
+          {
+            "phrase": "*extends maw*",
+            "count": 5,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 61110,
+            "timestamp": "02/18/2026 13:53"
+          }
+        ]
+      },
+      "Fishy Imprisonment": {
+        "description": "Announces fishy imprisonment, with a severe variant.",
+        "callouts": [
+          {
+            "phrase": "*severe fishy imprisonment*",
+            "count": 25,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 58527,
+            "timestamp": "02/02/2026 17:11"
+          },
+          {
+            "phrase": "*fishy imprisonment*",
+            "count": 18,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 64687,
+            "timestamp": "02/18/2026 14:10"
+          }
+        ]
+      }
+    },
+    "Abyssal Daemon": {
+      "Rift Servants": {
+        "description": "Summons servants from the rift; the announcement does not identify their types.",
+        "callouts": [
+          {
+            "phrase": "*summons servants from the rift*",
+            "count": 359,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 64451,
+            "timestamp": "03/01/2026 13:01"
+          }
+        ]
+      },
+      "Abyssal Claws": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*abyssal claws*",
+            "count": 72,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 69730,
+            "timestamp": "03/01/2026 13:09"
+          },
+          {
+            "phrase": "*wretched abyssal claws*",
+            "count": 66,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 65960,
+            "timestamp": "03/01/2026 13:04"
+          }
+        ]
+      },
+      "Abyssal Doom": {
+        "description": "Manifests abyssal doom, sometimes described as certain.",
+        "callouts": [
+          {
+            "phrase": "*manifests abyssal doom*",
+            "count": 69,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 64452,
+            "timestamp": "03/01/2026 13:01"
+          },
+          {
+            "phrase": "*manifests certain abyssal doom*",
+            "count": 51,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 64242,
+            "timestamp": "03/01/2026 13:01"
+          }
+        ]
+      },
+      "Beckons the Void": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*beckons the void*",
+            "count": 68,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 66453,
+            "timestamp": "03/01/2026 13:04"
+          },
+          {
+            "phrase": "*emphatically beckons the void*",
+            "count": 57,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 67498,
+            "timestamp": "03/01/2026 13:06"
+          }
+        ]
+      },
+      "Abyssal Souls": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*releases abyssal souls*",
+            "count": 66,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 63721,
+            "timestamp": "03/01/2026 13:00"
+          },
+          {
+            "phrase": "*releases a wave of abyssal souls*",
+            "count": 59,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 65101,
+            "timestamp": "03/01/2026 13:02"
+          }
+        ]
+      },
+      "Green Sphere": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*raises a pair of abyssal spheres*",
+            "count": 65,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 64943,
+            "timestamp": "03/01/2026 13:02"
+          },
+          {
+            "phrase": "*raises abyssal sphere*",
+            "count": 65,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 67023,
+            "timestamp": "03/01/2026 13:05"
+          }
+        ]
+      },
+      "Abyssal Fury": {
+        "description": "Unleashes abyssal fury, with a terrifying variant.",
+        "callouts": [
+          {
+            "phrase": "*unleashes abyssal fury*",
+            "count": 54,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 64791,
+            "timestamp": "03/01/2026 13:02"
+          },
+          {
+            "phrase": "*unleashes terrifying abyssal fury*",
+            "count": 39,
+            "source": "2026_02_28_18_35_22_journal.txt",
+            "line": 64632,
+            "timestamp": "03/01/2026 13:01"
+          }
+        ]
+      }
+    },
+    "Astral Daemon": {
+      "Rift Servants": {
+        "description": "Summons servants from the rift; the announcement does not identify their types.",
+        "callouts": [
+          {
+            "phrase": "*summons servants from the rift*",
+            "count": 340,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 98573,
+            "timestamp": "03/30/2026 20:26"
+          }
+        ]
+      },
+      "Cosmic Rays": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*cosmic rays*",
+            "count": 91,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 98574,
+            "timestamp": "03/30/2026 20:26"
+          },
+          {
+            "phrase": "*unyielding cosmic rays*",
+            "count": 78,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 106982,
+            "timestamp": "03/30/2026 20:38"
+          }
+        ]
+      },
+      "Astral Energy": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*focuses astral energy*",
+            "count": 83,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 99761,
+            "timestamp": "03/30/2026 20:28"
+          },
+          {
+            "phrase": "*focuses intense astral energy*",
+            "count": 82,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 106162,
+            "timestamp": "03/30/2026 20:36"
+          }
+        ]
+      },
+      "Astral Mirror": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*manifests astral mirrors*",
+            "count": 81,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 99103,
+            "timestamp": "03/30/2026 20:27"
+          },
+          {
+            "phrase": "*manifests a wall of astral mirrors*",
+            "count": 80,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 101716,
+            "timestamp": "03/30/2026 20:30"
+          }
+        ]
+      },
+      "Solar Rings": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*shapes solar rings*",
+            "count": 77,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 98936,
+            "timestamp": "03/30/2026 20:27"
+          },
+          {
+            "phrase": "*shapes orbital solar rings*",
+            "count": 51,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 98500,
+            "timestamp": "03/30/2026 20:26"
+          }
+        ]
+      },
+      "Stardust Shower": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*stardust shower*",
+            "count": 77,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 101981,
+            "timestamp": "03/30/2026 20:31"
+          },
+          {
+            "phrase": "*galactic stardust shower*",
+            "count": 72,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 99353,
+            "timestamp": "03/30/2026 20:27"
+          }
+        ]
+      },
+      "Pillars of Creation": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*pillars of creation*",
+            "count": 71,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 107525,
+            "timestamp": "03/30/2026 20:38"
+          }
+        ]
+      }
+    },
+    "Storm Daemon": {
+      "Rift Servants": {
+        "description": "Summons servants from the rift; the announcement does not identify their types.",
+        "callouts": [
+          {
+            "phrase": "*summons servants from the rift*",
+            "count": 460,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 1558,
+            "timestamp": "01/31/2026 16:05"
+          }
+        ]
+      },
+      "Lightning Blitz": {
+        "description": "Announces a lightning blitz, with an arcing variant.",
+        "callouts": [
+          {
+            "phrase": "*arcing lightning blitz*",
+            "count": 148,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 3499,
+            "timestamp": "01/31/2026 16:11"
+          },
+          {
+            "phrase": "*lightning blitz*",
+            "count": 102,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 1232,
+            "timestamp": "01/31/2026 16:04"
+          }
+        ]
+      },
+      "Lightning Rod": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*shapes an array of lightning rods*",
+            "count": 128,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 2351,
+            "timestamp": "01/31/2026 16:06"
+          },
+          {
+            "phrase": "*shapes lightning rods*",
+            "count": 100,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 2611,
+            "timestamp": "01/31/2026 16:07"
+          }
+        ]
+      },
+      "Tempest": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*releases unforgiving tempest*",
+            "count": 123,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 2794,
+            "timestamp": "01/31/2026 16:07"
+          },
+          {
+            "phrase": "*releases tempest*",
+            "count": 104,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 1559,
+            "timestamp": "01/31/2026 16:05"
+          }
+        ]
+      },
+      "Shockshot": {
+        "description": "Announces a shockshot, with a crackling variant.",
+        "callouts": [
+          {
+            "phrase": "*crackling shockshot*",
+            "count": 119,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 1724,
+            "timestamp": "01/31/2026 16:05"
+          },
+          {
+            "phrase": "*shockshot*",
+            "count": 111,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 3379,
+            "timestamp": "01/31/2026 16:11"
+          }
+        ]
+      },
+      "Supercharge": {
+        "description": "Announces both the start of supercharge and when it subsides.",
+        "callouts": [
+          {
+            "phrase": "*supercharge subsides*",
+            "count": 109,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 2651,
+            "timestamp": "01/31/2026 16:07"
+          },
+          {
+            "phrase": "*supercharges*",
+            "count": 108,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 2478,
+            "timestamp": "01/31/2026 16:07"
+          }
+        ]
+      },
+      "Ion Spheres": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*discharges a burst of ion spheres*",
+            "count": 99,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 1386,
+            "timestamp": "01/31/2026 16:04"
+          },
+          {
+            "phrase": "*discharges ion spheres*",
+            "count": 84,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 5110,
+            "timestamp": "01/31/2026 16:14"
+          }
+        ]
+      },
+      "Overcharge": {
+        "description": "Announces both the start of overcharge and when it subsides.",
+        "callouts": [
+          {
+            "phrase": "*overcharge subsides*",
+            "count": 77,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 1308,
+            "timestamp": "01/31/2026 16:04"
+          },
+          {
+            "phrase": "*overcharges*",
+            "count": 67,
+            "source": "2026_01_31_15_57_13_journal.txt",
+            "line": 3908,
+            "timestamp": "01/31/2026 16:12"
+          }
+        ]
+      }
+    },
+    "Terrorwood": {
+      "Propagation": {
+        "description": "Announces propagation, suggesting growth or spawning.",
+        "callouts": [
+          {
+            "phrase": "*propagates*",
+            "count": 20,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 12690,
+            "timestamp": "01/31/2026 12:13"
+          }
+        ]
+      },
+      "Swampy Seeds": {
+        "description": "Plants a great deal of swampy seeds.",
+        "callouts": [
+          {
+            "phrase": "*plants a great deal of swampy seeds*",
+            "count": 6,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 9418,
+            "timestamp": "02/07/2026 12:06"
+          }
+        ]
+      },
+      "Explosive Mushrooms": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*plants a swathe of spores*",
+            "count": 5,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 12349,
+            "timestamp": "01/31/2026 12:13"
+          },
+          {
+            "phrase": "*plants spores*",
+            "count": 3,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 9257,
+            "timestamp": "02/07/2026 12:06"
+          }
+        ]
+      },
+      "Needle Seeds": {
+        "description": "Plants needle seeds, sometimes a field of them.",
+        "callouts": [
+          {
+            "phrase": "*plants needle seeds*",
+            "count": 3,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 35694,
+            "timestamp": "02/21/2026 12:31"
+          },
+          {
+            "phrase": "*plants a field of needle seeds*",
+            "count": 2,
+            "source": "2026_06_07_09_47_42_journal.txt",
+            "line": 16874,
+            "timestamp": "06/07/2026 10:58"
+          }
+        ]
+      },
+      "Spikeseeds": {
+        "description": "Shoots spikeseeds, sometimes a swarm.",
+        "callouts": [
+          {
+            "phrase": "*shoots a swarm of spikeseeds*",
+            "count": 1,
+            "source": "2026_02_27_17_07_14_journal.txt",
+            "line": 8857,
+            "timestamp": "02/27/2026 17:55"
+          },
+          {
+            "phrase": "*shoots spikeseeds*",
+            "count": 1,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 27278,
+            "timestamp": "05/03/2026 15:31"
+          }
+        ]
+      }
+    },
+    "Sanguineous": {
+      "Deflection": {
+        "description": "Announces a deflection; the journal does not identify the attack deflected.",
+        "callouts": [
+          {
+            "phrase": "*deflects*",
+            "count": 429,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17275,
+            "timestamp": "02/02/2026 13:43"
+          }
+        ]
+      },
+      "Spell Parry": {
+        "description": "Announces parrying a spell.",
+        "callouts": [
+          {
+            "phrase": "*parries spell*",
+            "count": 215,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17277,
+            "timestamp": "02/02/2026 13:43"
+          }
+        ]
+      },
+      "Living Blood": {
+        "description": "Brings blood to life, suggesting an animation or summon.",
+        "callouts": [
+          {
+            "phrase": "*brings blood to life*",
+            "count": 61,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17710,
+            "timestamp": "02/02/2026 13:43"
+          }
+        ]
+      },
+      "Charge": {
+        "description": "Announces a charge.",
+        "callouts": [
+          {
+            "phrase": "*charges*",
+            "count": 51,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17195,
+            "timestamp": "02/02/2026 13:43"
+          }
+        ]
+      },
+      "Shapeshift": {
+        "description": "Announces a change of form.",
+        "callouts": [
+          {
+            "phrase": "*shapeshifts*",
+            "count": 16,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17596,
+            "timestamp": "02/02/2026 13:43"
+          }
+        ]
+      },
+      "Sword and Shield": {
+        "description": "Readies a sword and shield.",
+        "callouts": [
+          {
+            "phrase": "*readies sword and shield*",
+            "count": 15,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17274,
+            "timestamp": "02/02/2026 13:43"
+          }
+        ]
+      },
+      "Stirring Blood": {
+        "description": "Announces that blood begins to stir.",
+        "callouts": [
+          {
+            "phrase": "*blood begins to stir*",
+            "count": 12,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 47551,
+            "timestamp": "02/04/2026 14:00"
+          }
+        ]
+      },
+      "Heart Attacks": {
+        "description": "Announces inducing heart attacks, with a fatal variant.",
+        "callouts": [
+          {
+            "phrase": "*induces heart attacks*",
+            "count": 7,
+            "source": "2026_04_29_13_38_15_journal.txt",
+            "line": 10146,
+            "timestamp": "04/29/2026 14:10"
+          },
+          {
+            "phrase": "*induces fatal heart attacks*",
+            "count": 5,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 17896,
+            "timestamp": "02/02/2026 13:44"
+          }
+        ]
+      },
+      "Reaching Below": {
+        "description": "Reaches below; the destination and resulting effect are unknown.",
+        "callouts": [
+          {
+            "phrase": "*reaches below*",
+            "count": 4,
+            "source": "2026_04_29_13_38_15_journal.txt",
+            "line": 9696,
+            "timestamp": "04/29/2026 14:09"
+          }
+        ]
+      },
+      "Reaching Beyond": {
+        "description": "Reaches far beyond; the destination and resulting effect are unknown.",
+        "callouts": [
+          {
+            "phrase": "*reaches far beyond*",
+            "count": 4,
+            "source": "2026_02_23_09_54_37_journal.txt",
+            "line": 44857,
+            "timestamp": "02/23/2026 16:35"
+          }
+        ]
+      },
+      "Blood Burst": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*sprays a massacre of blood*",
+            "count": 4,
+            "source": "2026_04_29_13_38_15_journal.txt",
+            "line": 9080,
+            "timestamp": "04/29/2026 14:08"
+          },
+          {
+            "phrase": "*sprays blood*",
+            "count": 3,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 47552,
+            "timestamp": "02/04/2026 14:00"
+          }
+        ]
+      }
+    },
+    "Pit Dragon": {
+      "Screech": {
+        "description": "Screeches; any additional effect is not established by the announcement.",
+        "callouts": [
+          {
+            "phrase": "*screeches*",
+            "count": 33,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 1312,
+            "timestamp": "01/28/2026 12:42"
+          }
+        ]
+      },
+      "Deep Breath": {
+        "description": "Draws a deep breath as a possible wind-up cue.",
+        "callouts": [
+          {
+            "phrase": "*takes a long, deep breath*",
+            "count": 9,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 1249,
+            "timestamp": "01/28/2026 12:42"
+          },
+          {
+            "phrase": "*takes deep breath*",
+            "count": 1,
+            "source": "2026_02_27_18_15_11_journal.txt",
+            "line": 7878,
+            "timestamp": "02/27/2026 18:47"
+          }
+        ]
+      },
+      "Massive Breath": {
+        "description": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+        "callouts": [
+          {
+            "phrase": "*takes incredibly massive breath*",
+            "count": 4,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 1451,
+            "timestamp": "01/28/2026 12:43"
+          },
+          {
+            "phrase": "*takes massive breath*",
+            "count": 1,
+            "source": "2026_04_04_09_18_43_journal.txt",
+            "line": 2353,
+            "timestamp": "04/04/2026 09:35"
+          }
+        ]
+      },
+      "Unleashed Evil": {
+        "description": "Unleashes evil, sometimes described as abyssal.",
+        "callouts": [
+          {
+            "phrase": "*unleashes abyssal evil*",
+            "count": 4,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 1216,
+            "timestamp": "01/28/2026 12:42"
+          },
+          {
+            "phrase": "*unleashes evil*",
+            "count": 2,
+            "source": "2026_02_14_11_34_30_journal.txt",
+            "line": 2511,
+            "timestamp": "02/14/2026 12:15"
+          }
+        ]
+      },
+      "Dematerialization": {
+        "description": "Announces complete dematerialization and subsequent materialization.",
+        "callouts": [
+          {
+            "phrase": "*dematerializes completely*",
+            "count": 2,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 1582,
+            "timestamp": "01/28/2026 12:44"
+          },
+          {
+            "phrase": "*materializes*",
+            "count": 2,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 1792,
+            "timestamp": "01/28/2026 12:45"
+          }
+        ]
+      },
+      "Ranged Summons": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*summons beasts of the pit*",
+            "count": 1,
+            "source": "2026_03_02_16_04_36_journal.txt",
+            "line": 5633,
+            "timestamp": "03/02/2026 16:51"
+          }
+        ]
+      }
+    },
+    "Speaker For The Dead": {
+      "Phantom Summons": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*speaks to the dead*",
+            "count": 99,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 2557,
+            "timestamp": "01/28/2026 12:54"
+          }
+        ]
+      },
+      "Memorial Candles": {
+        "description": "Lights memorial candles, sometimes a large number.",
+        "callouts": [
+          {
+            "phrase": "*lights a large number of memorial candles*",
+            "count": 28,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 2748,
+            "timestamp": "01/28/2026 12:55"
+          },
+          {
+            "phrase": "*lights memorial candles*",
+            "count": 1,
+            "source": "2026_03_28_16_49_48_journal.txt",
+            "line": 42311,
+            "timestamp": "03/28/2026 20:35"
+          }
+        ]
+      },
+      "Flaming Skulls": {
+        "description": "Throws flaming skulls, sometimes a pile.",
+        "callouts": [
+          {
+            "phrase": "*throws a pile of flaming skulls*",
+            "count": 16,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 3068,
+            "timestamp": "01/28/2026 12:56"
+          },
+          {
+            "phrase": "*throws flaming skulls*",
+            "count": 4,
+            "source": "2026_03_03_17_47_59_journal.txt",
+            "line": 42578,
+            "timestamp": "03/04/2026 12:37"
+          }
+        ]
+      },
+      "Embalming Mixture": {
+        "description": "Prepares embalming mixture, sometimes a massive amount.",
+        "callouts": [
+          {
+            "phrase": "*prepares massive amount of embalming mixture*",
+            "count": 14,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 2594,
+            "timestamp": "01/28/2026 12:55"
+          },
+          {
+            "phrase": "*prepares embalming mixture*",
+            "count": 5,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 3340,
+            "timestamp": "01/28/2026 13:02"
+          }
+        ]
+      },
+      "Raised Dead": {
+        "description": "Raises dead, sometimes a good number of them.",
+        "callouts": [
+          {
+            "phrase": "*raises a good number of dead*",
+            "count": 14,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 2977,
+            "timestamp": "01/28/2026 12:56"
+          },
+          {
+            "phrase": "*raises dead*",
+            "count": 4,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 76723,
+            "timestamp": "02/16/2026 17:30"
+          }
+        ]
+      }
+    },
+    "Lodestone": {
+      "Earth Beckoning": {
+        "description": "Beckons the earth; the announcement does not identify summoned objects or creatures.",
+        "callouts": [
+          {
+            "phrase": "*beckons the earth*",
+            "count": 44,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 32304,
+            "timestamp": "01/31/2026 13:32"
+          }
+        ]
+      },
+      "Damage Reflection": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*harmonic refraction*",
+            "count": 21,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 14381,
+            "timestamp": "02/07/2026 12:20"
+          }
+        ]
+      },
+      "Ground Pounding": {
+        "description": "Pounds the ground, sometimes to dust.",
+        "callouts": [
+          {
+            "phrase": "*pounds the ground to dust*",
+            "count": 13,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 32149,
+            "timestamp": "01/31/2026 13:32"
+          },
+          {
+            "phrase": "*pounds the ground*",
+            "count": 2,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 32036,
+            "timestamp": "01/31/2026 13:31"
+          }
+        ]
+      },
+      "Thrown Stones": {
+        "description": "Throws stones, sometimes many stones.",
+        "callouts": [
+          {
+            "phrase": "*throws many stones*",
+            "count": 10,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 31223,
+            "timestamp": "02/04/2026 12:53"
+          },
+          {
+            "phrase": "*throws stones*",
+            "count": 1,
+            "source": "2026_04_28_10_25_58_journal.txt",
+            "line": 9756,
+            "timestamp": "04/28/2026 11:11"
+          }
+        ]
+      },
+      "Crush": {
+        "description": "Announces a crushing action.",
+        "callouts": [
+          {
+            "phrase": "*crushes*",
+            "count": 5,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 64302,
+            "timestamp": "02/21/2026 13:33"
+          }
+        ]
+      },
+      "Earth Descent and Return": {
+        "description": "Announces descending to the earth and returning from it.",
+        "callouts": [
+          {
+            "phrase": "*returns from the earth*",
+            "count": 3,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 14370,
+            "timestamp": "02/07/2026 12:20"
+          },
+          {
+            "phrase": "*descends to the earth*",
+            "count": 1,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 14373,
+            "timestamp": "02/07/2026 12:20"
+          }
+        ]
+      },
+      "Harmonic Feedback": {
+        "description": "Experiences harmonic feedback; the resulting effect is not identified.",
+        "callouts": [
+          {
+            "phrase": "*experiences harmonic feedback*",
+            "count": 2,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 14468,
+            "timestamp": "02/07/2026 12:20"
+          }
+        ]
+      }
+    },
+    "Kraul Hivemother": {
+      "Clicking": {
+        "description": "Makes a clicking announcement. The cue alone does not identify an attack or summon.",
+        "callouts": [
+          {
+            "phrase": "*clicks*",
+            "count": 64,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 16498,
+            "timestamp": "01/31/2026 12:29"
+          }
+        ]
+      },
+      "Dust Cloud": {
+        "description": "Announces a dust cloud; its area, duration, and effects are unknown.",
+        "callouts": [
+          {
+            "phrase": "*dust cloud*",
+            "count": 57,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 22247,
+            "timestamp": "02/07/2026 12:47"
+          }
+        ]
+      },
+      "Larval Eggs": {
+        "description": "Lays larval eggs, sometimes a colony. The callout does not identify what hatches or when.",
+        "callouts": [
+          {
+            "phrase": "*lays a colony of larval eggs*",
+            "count": 14,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 48330,
+            "timestamp": "02/18/2026 13:10"
+          },
+          {
+            "phrase": "*lays larval eggs*",
+            "count": 4,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 16302,
+            "timestamp": "01/31/2026 12:28"
+          }
+        ]
+      },
+      "Hivemind": {
+        "description": "Channels the hivemind, with an urgent variant. Its target and effects are unknown.",
+        "callouts": [
+          {
+            "phrase": "*urgently channels hivemind*",
+            "count": 10,
+            "source": "2026_02_07_10_33_18_journal.txt",
+            "line": 22311,
+            "timestamp": "02/07/2026 12:47"
+          },
+          {
+            "phrase": "*channels hivemind*",
+            "count": 2,
+            "source": "2026_05_08_09_17_26_journal.txt",
+            "line": 24103,
+            "timestamp": "05/08/2026 11:46"
+          }
+        ]
+      },
+      "Mold Spores": {
+        "description": "Gathers mold spores, sometimes a swarm. Their resulting effects are not established by the callout.",
+        "callouts": [
+          {
+            "phrase": "*gathers a swarm of mold spores*",
+            "count": 7,
+            "source": "2026_02_27_18_15_11_journal.txt",
+            "line": 2645,
+            "timestamp": "02/27/2026 18:24"
+          },
+          {
+            "phrase": "*gathers mold spores*",
+            "count": 4,
+            "source": "2026_05_01_16_25_44_journal.txt",
+            "line": 44983,
+            "timestamp": "05/01/2026 18:08"
+          }
+        ]
+      },
+      "Bombs": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*lays a colony of explosive eggs*",
+            "count": 6,
+            "source": "2026_02_27_18_15_11_journal.txt",
+            "line": 717,
+            "timestamp": "02/27/2026 18:19"
+          },
+          {
+            "phrase": "*lays explosive eggs*",
+            "count": 4,
+            "source": "2026_04_27_09_24_42_journal.txt",
+            "line": 17387,
+            "timestamp": "04/27/2026 13:24"
+          }
+        ]
+      },
+      "Fly Infestation": {
+        "description": "Announces a fly infestation; its targets and effects are unknown.",
+        "callouts": [
+          {
+            "phrase": "*fly infestation*",
+            "count": 1,
+            "source": "2026_06_11_06_32_22_journal.txt",
+            "line": 11628,
+            "timestamp": "06/11/2026 07:37"
+          }
+        ]
+      }
+    },
+    "Ancient Drowned Dragon": {
+      "Groan": {
+        "description": "Groans; no specific attack is identified by this cue.",
+        "callouts": [
+          {
+            "phrase": "*groans*",
+            "count": 68,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 5997,
+            "timestamp": "01/28/2026 13:16"
+          }
+        ]
+      },
+      "Massive Breath": {
+        "description": "Draws a massive breath, distinct from the ordinary deep-breath wording.",
+        "callouts": [
+          {
+            "phrase": "*takes incredibly massive breath*",
+            "count": 9,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 5934,
+            "timestamp": "01/28/2026 13:16"
+          },
+          {
+            "phrase": "*takes massive breath*",
+            "count": 5,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 71837,
+            "timestamp": "02/21/2026 13:58"
+          }
+        ]
+      },
+      "Deep Breath": {
+        "description": "Draws a deep breath as a possible wind-up cue.",
+        "callouts": [
+          {
+            "phrase": "*takes a long, deep breath*",
+            "count": 7,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 6397,
+            "timestamp": "01/28/2026 13:18"
+          },
+          {
+            "phrase": "*takes deep breath*",
+            "count": 2,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 5871,
+            "timestamp": "01/28/2026 13:16"
+          }
+        ]
+      },
+      "Bone Tide": {
+        "description": "Unleashes a tide or surge of bones.",
+        "callouts": [
+          {
+            "phrase": "*unleashes a tide of bone*",
+            "count": 5,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 75770,
+            "timestamp": "02/21/2026 14:07"
+          },
+          {
+            "phrase": "*unleashes a surge of bones*",
+            "count": 3,
+            "source": "2026_03_03_17_47_59_journal.txt",
+            "line": 45441,
+            "timestamp": "03/04/2026 12:47"
+          }
+        ]
+      },
+      "Scalding Water Breath": {
+        "description": "Breathes scalding water, sometimes a torrent.",
+        "callouts": [
+          {
+            "phrase": "*breathes a torrent of scalding water*",
+            "count": 4,
+            "source": "2026_03_30_09_15_51_journal.txt",
+            "line": 4579,
+            "timestamp": "03/30/2026 10:14"
+          },
+          {
+            "phrase": "*breathes scalding water*",
+            "count": 1,
+            "source": "2026_05_05_21_46_33_journal.txt",
+            "line": 1756,
+            "timestamp": "05/05/2026 21:53"
+          }
+        ]
+      }
+    },
+    "Heart Of The Mountain": {
+      "Spreads": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*spreads*",
+            "count": 40,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 12568,
+            "timestamp": "01/28/2026 13:56"
+          }
+        ]
+      },
+      "Shapes Fire": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*shapes a great amount of fire*",
+            "count": 15,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 12459,
+            "timestamp": "01/28/2026 13:55"
+          },
+          {
+            "phrase": "*shapes fire*",
+            "count": 3,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 12404,
+            "timestamp": "01/28/2026 13:55"
+          }
+        ]
+      },
+      "Releases Stored Energy": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*releases massive store of energy*",
+            "count": 7,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 13813,
+            "timestamp": "01/28/2026 13:59"
+          },
+          {
+            "phrase": "*released stored energy*",
+            "count": 4,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 13306,
+            "timestamp": "01/28/2026 13:58"
+          }
+        ]
+      },
+      "Accelerates": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*accelerates*",
+            "count": 6,
+            "source": "2026_04_24_09_24_59_journal.txt",
+            "line": 15628,
+            "timestamp": "04/24/2026 11:35"
+          },
+          {
+            "phrase": "*begins to accelerate wildly*",
+            "count": 4,
+            "source": "2026_01_28_11_56_34_journal.txt",
+            "line": 13099,
+            "timestamp": "01/28/2026 13:57"
+          }
+        ]
+      },
+      "Draws From the Core": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*draws deeply from the core*",
+            "count": 6,
+            "source": "2026_02_27_17_07_14_journal.txt",
+            "line": 11883,
+            "timestamp": "02/27/2026 18:06"
+          },
+          {
+            "phrase": "*draws from the core*",
+            "count": 3,
+            "source": "2026_04_24_09_24_59_journal.txt",
+            "line": 16422,
+            "timestamp": "04/24/2026 11:37"
+          }
+        ]
+      }
+    },
+    "Cistern Gorgon": {
+      "Summons Serpents": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*releases serpents*",
+            "count": 61,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 24400,
+            "timestamp": "01/31/2026 12:56"
+          }
+        ]
+      },
+      "Focused Gaze": {
+        "description": "Focuses a gaze, with a hateful variant.",
+        "callouts": [
+          {
+            "phrase": "*focuses hateful gaze*",
+            "count": 11,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 35568,
+            "timestamp": "02/04/2026 13:12"
+          },
+          {
+            "phrase": "*focuses gaze*",
+            "count": 3,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 35435,
+            "timestamp": "02/04/2026 13:12"
+          }
+        ]
+      },
+      "Arrows": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*unleashes torrent of arrows*",
+            "count": 11,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 24202,
+            "timestamp": "01/31/2026 12:56"
+          },
+          {
+            "phrase": "*unleashes flurry of arrows*",
+            "count": 2,
+            "source": "2026_05_05_13_07_48_journal.txt",
+            "line": 33970,
+            "timestamp": "05/05/2026 14:25"
+          }
+        ]
+      },
+      "Ice Storm": {
+        "description": "Calls down an ice storm or freezing rain.",
+        "callouts": [
+          {
+            "phrase": "*calls down an ice storm*",
+            "count": 7,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 35820,
+            "timestamp": "02/04/2026 13:13"
+          },
+          {
+            "phrase": "*calls down a freezing rain*",
+            "count": 1,
+            "source": "2026_05_03_13_32_35_journal.txt",
+            "line": 55102,
+            "timestamp": "05/03/2026 22:20"
+          }
+        ]
+      },
+      "Stirred Water": {
+        "description": "Stirs the water, sometimes into a frenzy.",
+        "callouts": [
+          {
+            "phrase": "*stirs the water into a frenzy*",
+            "count": 7,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 24547,
+            "timestamp": "01/31/2026 12:57"
+          },
+          {
+            "phrase": "*stirs the water*",
+            "count": 1,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 83915,
+            "timestamp": "02/21/2026 14:35"
+          }
+        ]
+      },
+      "Toxic Arrows": {
+        "description": "Readies toxic arrows, with a potent variant.",
+        "callouts": [
+          {
+            "phrase": "*readies potent toxic arrows*",
+            "count": 3,
+            "source": "2026_02_21_08_00_38_journal.txt",
+            "line": 84069,
+            "timestamp": "02/21/2026 14:35"
+          },
+          {
+            "phrase": "*readies toxic arrows*",
+            "count": 1,
+            "source": "2026_09_08_10_39_26_journal.txt",
+            "line": 23971,
+            "timestamp": "09/08/2026 12:28"
+          }
+        ]
+      },
+      "Crippling Arrows": {
+        "description": "Readies crippling arrows, with a potent variant.",
+        "callouts": [
+          {
+            "phrase": "*readies crippling arrows*",
+            "count": 2,
+            "source": "2026_02_12_15_07_43_journal.txt",
+            "line": 3813,
+            "timestamp": "02/12/2026 16:47"
+          },
+          {
+            "phrase": "*readies potent crippling arrows*",
+            "count": 2,
+            "source": "2026_09_08_10_39_26_journal.txt",
+            "line": 27801,
+            "timestamp": "09/08/2026 12:40"
+          }
+        ]
+      },
+      "Chilling Arrows": {
+        "description": "Readies potent chilling arrows.",
+        "callouts": [
+          {
+            "phrase": "*readies potent chilling arrows*",
+            "count": 2,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 36236,
+            "timestamp": "02/04/2026 13:14"
+          }
+        ]
+      }
+    },
+    "Great Abyssal Hornbeast": {
+      "Wail": {
+        "description": "Wails; no specific attack is identified by this cue.",
+        "callouts": [
+          {
+            "phrase": "*wails*",
+            "count": 28,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 28111,
+            "timestamp": "02/04/2026 12:41"
+          }
+        ]
+      },
+      "Shoulder Blades": {
+        "description": "Fires shoulder blades, sometimes a barrage.",
+        "callouts": [
+          {
+            "phrase": "*fires a barrage of shoulder blades*",
+            "count": 6,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 28281,
+            "timestamp": "02/04/2026 12:41"
+          },
+          {
+            "phrase": "*fires shoulder blades*",
+            "count": 1,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 27729,
+            "timestamp": "02/04/2026 12:40"
+          }
+        ]
+      },
+      "Icy Abyss": {
+        "description": "Reaches into the icy abyss, with a deeper variant.",
+        "callouts": [
+          {
+            "phrase": "*reaches deep into the icy abyss*",
+            "count": 6,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 27894,
+            "timestamp": "02/04/2026 12:41"
+          },
+          {
+            "phrase": "*reaches into the icy abyss*",
+            "count": 2,
+            "source": "2026_02_27_17_07_14_journal.txt",
+            "line": 5592,
+            "timestamp": "02/27/2026 17:45"
+          }
+        ]
+      }
+    },
+    "Gargoyle Archon": {
+      "Summons Adds": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*raises hell*",
+            "count": 44,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 36311,
+            "timestamp": "01/31/2026 13:47"
+          }
+        ]
+      },
+      "Golden Wings": {
+        "description": "Unleashes golden wings, sometimes a litany.",
+        "callouts": [
+          {
+            "phrase": "*unleashes a litany of golden wings*",
+            "count": 10,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 36089,
+            "timestamp": "01/31/2026 13:46"
+          },
+          {
+            "phrase": "*unleashes golden wings*",
+            "count": 6,
+            "source": "2026_05_18_12_26_32_journal.txt",
+            "line": 14422,
+            "timestamp": "05/18/2026 13:11"
+          }
+        ]
+      },
+      "Pane": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*brings a lot of pane*",
+            "count": 8,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 21922,
+            "timestamp": "02/02/2026 13:57"
+          },
+          {
+            "phrase": "*brings the pane*",
+            "count": 4,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 20998,
+            "timestamp": "02/02/2026 13:56"
+          }
+        ]
+      },
+      "Stone Fists": {
+        "description": "Throws stone fists, sometimes a torrent.",
+        "callouts": [
+          {
+            "phrase": "*throws a torrent of stone fists*",
+            "count": 6,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 21546,
+            "timestamp": "02/02/2026 13:57"
+          },
+          {
+            "phrase": "*throws stone fists*",
+            "count": 3,
+            "source": "2026_02_16_09_58_44_journal.txt",
+            "line": 63296,
+            "timestamp": "02/16/2026 16:52"
+          }
+        ]
+      },
+      "Archon Statue": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*begins a stonecrafting masterwork*",
+            "count": 5,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 36831,
+            "timestamp": "01/31/2026 13:48"
+          },
+          {
+            "phrase": "*begins stonecrafting*",
+            "count": 2,
+            "source": "2026_05_18_12_26_32_journal.txt",
+            "line": 14072,
+            "timestamp": "05/18/2026 13:10"
+          }
+        ]
+      }
+    },
+    "Insatiable Maw": {},
+    "Oblivion Deathmage": {
+      "Oblivion": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*gathers oblivion*",
+            "count": 85,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 33606,
+            "timestamp": "01/31/2026 13:37"
+          }
+        ]
+      },
+      "Deathstare": {
+        "description": "Announces a deathstare, with a piercing variant.",
+        "callouts": [
+          {
+            "phrase": "*piercing deathstare*",
+            "count": 19,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 33442,
+            "timestamp": "01/31/2026 13:37"
+          },
+          {
+            "phrase": "*deathstare*",
+            "count": 1,
+            "source": "2026_05_08_12_21_10_journal.txt",
+            "line": 5584,
+            "timestamp": "05/08/2026 12:49"
+          }
+        ]
+      },
+      "Haunting": {
+        "description": "Begins a haunting, sometimes described as eerie.",
+        "callouts": [
+          {
+            "phrase": "*begins eerie haunting*",
+            "count": 13,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 54322,
+            "timestamp": "02/18/2026 13:30"
+          },
+          {
+            "phrase": "*begins haunting*",
+            "count": 4,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 33328,
+            "timestamp": "01/31/2026 13:36"
+          }
+        ]
+      },
+      "Deathgrip": {
+        "description": "Announces a deathgrip, with a mortal variant.",
+        "callouts": [
+          {
+            "phrase": "*mortal deathgrip*",
+            "count": 13,
+            "source": "2026_02_04_07_33_53_journal.txt",
+            "line": 44437,
+            "timestamp": "02/04/2026 13:43"
+          },
+          {
+            "phrase": "*deathgrip*",
+            "count": 3,
+            "source": "2026_03_03_17_47_59_journal.txt",
+            "line": 63900,
+            "timestamp": "03/04/2026 14:04"
+          }
+        ]
+      },
+      "Faces Death": {
+        "description": "Announces facing death or certain death.",
+        "callouts": [
+          {
+            "phrase": "*faces certain death*",
+            "count": 8,
+            "source": "2026_03_02_16_04_36_journal.txt",
+            "line": 4385,
+            "timestamp": "03/02/2026 16:42"
+          },
+          {
+            "phrase": "*faces death*",
+            "count": 4,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 53582,
+            "timestamp": "02/18/2026 13:28"
+          }
+        ]
+      }
+    },
+    "Marinerbane": {
+      "Deep Dwellers": {
+        "description": "Stirs deep dwellers, suggesting a reinforcement cue.",
+        "callouts": [
+          {
+            "phrase": "*stirs deep dwellers*",
+            "count": 97,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 27290,
+            "timestamp": "01/31/2026 13:07"
+          }
+        ]
+      },
+      "Exploding Sharks": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*unleashes catch of the week*",
+            "count": 16,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 56238,
+            "timestamp": "02/18/2026 13:41"
+          },
+          {
+            "phrase": "*unleashes catch of the day*",
+            "count": 9,
+            "source": "2026_04_05_07_38_45_journal.txt",
+            "line": 8445,
+            "timestamp": "04/05/2026 08:48"
+          }
+        ]
+      },
+      "Drowned Gunners": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*raises a mighty cannon crew*",
+            "count": 14,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 55706,
+            "timestamp": "02/02/2026 16:58"
+          },
+          {
+            "phrase": "*raises cannon crew*",
+            "count": 8,
+            "source": "2026_03_02_16_04_36_journal.txt",
+            "line": 9236,
+            "timestamp": "03/02/2026 17:07"
+          }
+        ]
+      },
+      "Explosive Barrels": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*throws a barrage of glowing barrels*",
+            "count": 12,
+            "source": "2026_02_02_07_55_32_journal.txt",
+            "line": 55456,
+            "timestamp": "02/02/2026 16:57"
+          },
+          {
+            "phrase": "*throws glowing barrels*",
+            "count": 8,
+            "source": "2026_02_17_15_06_57_journal.txt",
+            "line": 56101,
+            "timestamp": "02/18/2026 13:41"
+          }
+        ]
+      },
+      "Launch": {
+        "description": null,
+        "callouts": [
+          {
+            "phrase": "*lashes out*",
+            "count": 10,
+            "source": "2026_04_05_07_38_45_journal.txt",
+            "line": 8845,
+            "timestamp": "04/05/2026 08:49"
+          },
+          {
+            "phrase": "*furiously lashes out*",
+            "count": 7,
+            "source": "2026_02_12_15_07_43_journal.txt",
+            "line": 9304,
+            "timestamp": "02/12/2026 17:13"
+          }
+        ]
+      },
+      "Feelers": {
+        "description": "Sends out feelers, sometimes a horde.",
+        "callouts": [
+          {
+            "phrase": "*sends out a horde of feelers*",
+            "count": 9,
+            "source": "2026_01_31_10_08_49_journal.txt",
+            "line": 27156,
+            "timestamp": "01/31/2026 13:07"
+          },
+          {
+            "phrase": "*sends out feelers*",
+            "count": 8,
+            "source": "2026_04_05_07_38_45_journal.txt",
+            "line": 9183,
+            "timestamp": "04/05/2026 08:49"
+          }
+        ]
+      }
+    },
+    "Broodbearer": {
+      "Brooding": {
+        "description": "Announces brooding; the cue alone does not identify offspring or their behavior.",
+        "callouts": [
+          {
+            "phrase": "*broods*",
+            "count": 608,
+            "source": "2026_02_06_07_44_13_journal.txt",
+            "line": 13742,
+            "timestamp": "02/06/2026 10:06"
+          }
+        ]
+      },
+      "Webbing": {
+        "description": "Readies webbing, suggesting an upcoming web effect.",
+        "callouts": [
+          {
+            "phrase": "*readies webbing*",
+            "count": 567,
+            "source": "2026_02_06_07_44_13_journal.txt",
+            "line": 13787,
+            "timestamp": "02/06/2026 10:06"
+          }
+        ]
+      }
+    },
+    "Echo Of A Lost Age": {
+      "Painful Memory": {
+        "description": "Announces a painful memory; the target and effect are not identified.",
+        "callouts": [
+          {
+            "phrase": "*painful memory*",
+            "count": 619,
+            "source": "2026_02_06_07_44_13_journal.txt",
+            "line": 16952,
+            "timestamp": "02/06/2026 10:18"
+          }
+        ]
+      },
+      "Wail for the Past": {
+        "description": "Wails for the past; the target and effect are not identified.",
+        "callouts": [
+          {
+            "phrase": "*wails for the past*",
+            "count": 594,
+            "source": "2026_02_06_07_44_13_journal.txt",
+            "line": 17056,
+            "timestamp": "02/06/2026 10:18"
+          }
+        ]
+      }
+    },
+    "Flamekeeper": {
+      "Eruption": {
+        "description": "Announces an eruption; its area and damage are not recorded in the callout.",
+        "callouts": [
+          {
+            "phrase": "*erupts*",
+            "count": 549,
+            "source": "2026_02_03_17_19_18_journal.txt",
+            "line": 7806,
+            "timestamp": "02/03/2026 18:03"
+          }
+        ]
+      }
+    }
+  }
+}

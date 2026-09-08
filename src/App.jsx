@@ -5,13 +5,8 @@ import {
 } from 'lucide-react'
 import { bosses, sources } from './data'
 
-const confidence = {
-  medium: { label: 'Field documented', short: 'Documented', note: 'Clearly demonstrated in historical encounter footage; verify after balance changes.' },
-  low: { label: 'Verification needed', short: 'Unverified', note: 'Current combat archetype is known, but unique mechanics lack a trustworthy public breakdown.' },
-}
-
 const preferenceOptions = {
-  type: ['All encounters', 'Main Boss', 'Mini-Boss', 'Omni Boss'],
+  type: ['All encounters', 'Main Boss', 'Mini-Boss', 'Omni Boss', 'Treasure'],
   sortMode: ['dungeon', 'name'],
   viewMode: ['full', 'compact'],
 }
@@ -27,7 +22,7 @@ function savedPreference(key, fallback) {
 
 function BossArt({ boss, large = false }) {
   if (boss.image) {
-    const mobileImage = boss.image.replace(/\.[^.]+$/, '-mobile.webp')
+    const mobileImage = boss.mobileImage ?? boss.image.replace(/\.[^.]+$/, '-mobile.webp')
     return (
       <picture className="boss-picture">
         <source media="(max-width: 680px)" srcSet={mobileImage} type="image/webp" />
@@ -49,8 +44,8 @@ function BossArt({ boss, large = false }) {
 }
 
 function BossCard({ boss, onOpen, compact = false }) {
-  const c = confidence[boss.confidence]
-  const typeClass = boss.type === 'Main Boss' ? 'main' : boss.type === 'Omni Boss' ? 'omni' : 'mini'
+  const verifiedCount = boss.abilities.filter((item) => item.verification === 'verified').length
+  const typeClass = boss.type === 'Main Boss' ? 'main' : boss.type === 'Omni Boss' ? 'omni' : boss.type === 'Treasure' ? 'treasure' : 'mini'
   if (compact) {
     return (
       <button className={`boss-card compact-card compact-card-${typeClass}`} onClick={() => onOpen(boss)} aria-label={`Open ${boss.name} encounter guide`}>
@@ -65,7 +60,7 @@ function BossCard({ boss, onOpen, compact = false }) {
     <button className={`boss-card boss-card-${typeClass}`} onClick={() => onOpen(boss)} aria-label={`Open ${boss.name} encounter guide`}>
       <div className="card-art">
         <BossArt boss={boss} />
-        <span className={`confidence confidence-${boss.confidence}`}>{c.short}</span>
+        <span className={`confidence confidence-${verifiedCount ? 'medium' : 'low'}`}>{verifiedCount}/{boss.abilities.length} log verified</span>
       </div>
       <div className="card-copy">
         <div className="eyebrow"><span>{boss.type}</span><i />{boss.slayer}</div>
@@ -106,7 +101,7 @@ function BossModal({ boss, onClose }) {
   }
 
   const toggleAllDetails = () => {
-    const detailedNames = boss.abilities.filter(({ detail }) => detail).map(({ name }) => name)
+    const detailedNames = boss.abilities.filter(({ image }) => image).map(({ name }) => name)
     const allExpanded = detailedNames.every((name) => expandedAbilities.has(name))
     setExpandedAbilities(allExpanded ? new Set() : new Set(detailedNames))
   }
@@ -132,25 +127,32 @@ function BossModal({ boss, onClose }) {
         <section className="modal-section">
           <div className="mechanics-heading">
             <div className="section-kicker"><Sparkles /> Encounter mechanics</div>
-            {boss.abilities.some(({ detail }) => detail) && (
+            {boss.abilities.some(({ image }) => image) && (
               <button className="expand-all-button" onClick={toggleAllDetails}>
-                {boss.abilities.filter(({ detail }) => detail).every(({ name }) => expandedAbilities.has(name)) ? 'Collapse details' : 'Expand details'}
+                {boss.abilities.filter(({ image }) => image).every(({ name }) => expandedAbilities.has(name)) ? 'Collapse details' : 'Expand details'}
               </button>
             )}
           </div>
+          <p className="verification-note">VERIFIED means a matching callout was recorded in your journal. Matching a callout to an existing mechanic is an interpretation; its damage, timing, and effects are not verified by the callout alone. UNVERIFIED means no matching callout was found in this report.</p>
           {boss.abilities.length ? (
             <div className="ability-list">
-              {boss.abilities.map(({ name, text, action, detail, image, callout }, index) => (
+              {boss.abilities.map(({ name, text, action, detail, image, callout, callouts, verification }, index) => (
                 <div className="ability" key={name}>
                   <span>{String(index + 1).padStart(2, '0')}</span>
                   <div>
                     <div className="ability-heading">
                       <h3>{name}</h3>
+                      <span className={`verification-tag verification-${verification}`} title={verification === 'verified' ? 'Callout observed in the journal; effects and association may be inferred.' : 'No matching callout found in the journal report.'}>{verification.toUpperCase()}</span>
                       {action && <span className={`action-tag action-${action.toLowerCase()}`}>{action}</span>}
                     </div>
                     <p>{text}</p>
-                    {callout && <p className="ability-callout"><span>Boss callout</span> “{callout}”</p>}
-                    {detail && (
+                    {callouts.map((entry) => (
+                      <div className="journal-callout" key={entry.phrase}>
+                        <p className="ability-callout"><span>Callout</span> “{entry.phrase}”</p>
+                      </div>
+                    ))}
+                    {!callouts.length && callout && <p className="ability-callout"><span>Prior callout · unverified</span> “{callout}”</p>}
+                    {image && (
                       <>
                         <button
                           className="ability-detail-toggle"
@@ -162,7 +164,7 @@ function BossModal({ boss, onClose }) {
                         {expandedAbilities.has(name) && (
                           <div className={`ability-detail ${image ? 'has-image' : ''}`}>
                             {image && <img src={image} alt={`${boss.name} ${name} mechanic example`} loading="lazy" decoding="async" />}
-                            <p>{detail}</p>
+                            {detail && <p>{detail}</p>}
                           </div>
                         )}
                       </>
@@ -287,7 +289,7 @@ function App() {
           <div className="source-intro">
             <span className="section-number">02 / SOURCES</span>
             <h2>Study the Enemy</h2>
-            <p>The roster and archetypes come from official Outlands pages. Ability descriptions come from demonstrated community encounters and are flagged where later patches may have changed them.</p>
+            <p>The roster and archetypes come from official Outlands pages. Existing descriptions come from community encounters and reference material. New descriptions are inferred from journal callout wording. VERIFIED marks a recorded callout, while UNVERIFIED marks a mechanic with no matching callout in the report.</p>
           </div>
           <div className="source-list">
             {sources.map((source, index) => (
