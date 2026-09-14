@@ -193,7 +193,7 @@ const rawBosses = [
       ['Lightning Rod', 'Priority target. Calls random 70–80 damage strikes until double-clicked or destroyed.', 'CLICK', 'Lightning Rods are the first priority. Their random strikes deal roughly 70–80 damage but can be avoided by moving. Players can cast spells while auto-attacking the rod.', mechanic('storm-lightning-rod.webp')],
       ['Ion Spheres', 'Charge ranged players, reflect some attacks, and deal roughly 50 stamina plus 15 area damage.', 'MOVE', 'Ion Spheres select ranged players and charge toward them. They reflect some incoming attacks and retaliate for roughly 50 stamina damage plus 15 area damage.', mechanic('storm-ion-spheres.webp')],
       ['Shockshot', 'Throws lightning spikes around the Storm Daemon, hitting players in melee range.', 'MOVE'],
-      ['Tempest', 'A hurricane deals roughly 10–15 area damage per second. It may slowly follow players, but this is unconfirmed.', 'MOVE', 'A Tempest spawns at a random location and deals approximately 10–15 area damage each second. The source suggests it slowly follows players but explicitly marks that behavior as unconfirmed.', mechanic('storm-tempest.webp')],
+      ['Tempest', 'A hurricane deals roughly 10–15 area damage per second.', 'MOVE', 'A hurricane deals roughly 10–15 area damage per second.', mechanic('storm-tempest.webp')],
       ['Lightning Blitz', 'Charges around the arena and creates lightning-shard area damage.', 'MOVE', 'The Storm Daemon charges through the arena while lightning shards create damaging areas. Keep moving out of the shards and avoid carrying the charge through allies.', mechanic('storm-lightning-blitz.webp')],
       ['Overcharge / Supercharge', 'Ability needs clarification; rumored to be a melee attack buff.'],
       ['Enrage Timer', 'The fight becomes more dangerous if the group takes too long.', 'BURN', 'The encounter includes an enrage timer. Balance immediate Lightning Rod control against sustained boss damage so the fight does not run too long.'],
@@ -380,7 +380,8 @@ export const bosses = rawBosses.map((boss) => {
       verification: evidence[item.name]?.callouts.length ? 'verified' : 'unverified',
     })).sort((a, b) => {
       if (a.verification !== b.verification) return a.verification === 'verified' ? -1 : 1
-      return a.verification === 'verified' ? a.name.localeCompare(b.name) : 0
+      if (Boolean(a.image) !== Boolean(b.image)) return a.image ? -1 : 1
+      return a.name.localeCompare(b.name)
     }),
   }
 })
