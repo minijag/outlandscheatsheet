@@ -171,10 +171,11 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .ability > span { color: #536066; font-family: 'Cinzel', serif; font-size: 11px; }
 .ability h3 { margin-bottom: 5px; font-family: 'Cinzel', serif; font-size: 15px; font-weight: 500; }
 .ability p { margin: 0; color: #929c9f; font-size: 12px; line-height: 1.65; }
-.ability-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
+.ability-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; margin-bottom: 7px; }
+.ability-title { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .ability-heading h3 { margin: 0; }
-.ability-heading { flex-wrap: wrap; justify-content: flex-start; }
-.verification-tag { flex: 0 0 auto; margin-left: auto; font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 4px 7px; border: 1px solid; }
+.debuff-tags { display: flex; justify-content: center; gap: 7px; }
+.verification-tag { justify-self: end; font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 4px 7px; border: 1px solid; }
 .verification-verified { color: #9ce1b5; border-color: #3b7851; background: #162d21; }
 .verification-unverified { color: #e4be86; border-color: #866338; background: #302519; }
 .verification-note { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 12px 0 20px; }
@@ -188,6 +189,15 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .action-click { color: var(--gold-bright); border-color: rgba(201,165,93,.5); background: rgba(201,165,93,.12); }
 .action-burn { color: #f08c78; border-color: rgba(208,91,67,.52); background: rgba(168,77,64,.14); }
 .action-hold { color: #b9c0c2; border-color: rgba(153,165,169,.42); background: rgba(132,145,149,.1); }
+.debuff-tag { position: relative; flex: 0 0 auto; padding: 4px 7px 3px; border: 1px solid; font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: .12em; line-height: 1; text-transform: uppercase; cursor: help; }
+.debuff-bleed { color: #c3b0b5; border-color: rgba(143,108,119,.6); background: rgba(113,85,94,.18); }
+.debuff-poison { color: #a6d599; border-color: rgba(98,151,83,.55); background: rgba(65,105,56,.16); }
+.debuff-disease { color: #8fc9b1; border-color: rgba(68,143,111,.55); background: rgba(42,101,76,.16); }
+.debuff-tooltip { position: absolute; z-index: 4; bottom: calc(100% + 9px); left: 50%; width: min(270px, 68vw); padding: 10px 11px; color: #dce0df; background: #171d20; border: 1px solid rgba(151,142,145,.58); box-shadow: 0 8px 24px rgba(0,0,0,.42); font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400; letter-spacing: 0; line-height: 1.45; text-align: left; text-transform: none; opacity: 0; pointer-events: none; transform: translate(-50%, 4px); transition: opacity .14s ease, transform .14s ease; }
+.debuff-tooltip strong { display: block; margin-bottom: 3px; color: #c4bdc0; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.debuff-remedies { margin-left: 4px; }
+.debuff-remedies b { color: #e1dadd; font-weight: 700; }
+.debuff-tag:hover .debuff-tooltip, .debuff-tag:focus .debuff-tooltip { opacity: 1; transform: translate(-50%, 0); }
 .ability-detail-toggle { margin-top: 10px; padding: 0; border: 0; border-bottom: 1px solid rgba(201,165,93,.42); color: var(--gold-bright); background: transparent; font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
 .ability-detail-toggle:hover { border-color: var(--gold-bright); }
 .ability-detail { margin-top: 11px; padding: 11px 13px; border-left: 2px solid rgba(201,165,93,.34); background: rgba(255,255,255,.025); }

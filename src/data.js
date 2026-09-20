@@ -2,7 +2,23 @@ import journal from './journal-callouts.json' with { type: 'json' }
 
 const img = (file) => file ? `/bosses/${file}` : null
 const mechanic = (file) => file ? `/mechanics/${file}` : null
-const ability = ([name, text, action, detail, image, callout]) => ({ name, text, action, detail, image, callout: callout ?? null })
+const ability = ([name, text, action, detail, image, callout, debuffs]) => ({ name, text, action, detail, image, callout: callout ?? null, debuffs: debuffs ?? [] })
+
+export const debuffTypes = {
+  bleed: {
+    label: 'Bleed',
+    guidance: 'To remove or mitigate it:',
+    remedies: ['Close Wounds (Paladin Codex)', 'Panacea (Alchemy Codex)', 'Cleansing Brew (item)'],
+  },
+  poison: {
+    label: 'Poison',
+    guidance: 'Use the encounter’s appropriate poison cure or mitigation before the damage-over-time pressure becomes dangerous.',
+  },
+  disease: {
+    label: 'Disease',
+    guidance: 'Use disease mitigation and keep healing ready while the damage-over-time effect is active.',
+  },
+}
 
 const rawBosses = [
   {
@@ -52,10 +68,10 @@ const rawBosses = [
     abilities: [
       ['Spider Transformation', 'Transforms into a giant spider and gains access to web attacks.'],
       ['Web', 'Restrains players and prolongs exposure to other mechanics.'],
-      ['Blood Magic', 'Casts area burst and bleed attacks.'],
+      ['Blood Magic', 'Casts area burst and bleed attacks.', null, null, null, null, ['bleed']],
       ['Poison Saliva', 'Spits poison at a selected player.'],
       ['Tracking Orb', 'Travels toward a player’s recorded position and can be outrun.'],
-      ['Blood Sorcerers', 'Priority caster adds that inflict area bleed effects.'],
+      ['Blood Sorcerers', 'Priority caster adds that inflict area bleed effects.', null, null, null, null, ['bleed']],
     ],
     tips: ['Keep moving during orb attacks.', 'Kill Blood Sorcerers immediately and carry cure potions.'],
   },
@@ -83,7 +99,7 @@ const rawBosses = [
     name: 'Forgotten King', type: 'Main Boss', location: 'Ossuary', slayer: 'Undead', role: 'Armored melee', confidence: 'medium', image: img('the-forgotten-king.gif'),
     summary: 'A trap gauntlet with punishing undead reinforcements.',
     abilities: [
-      ['Spike Traps', 'Spikes appear at player locations with little warning and can cause bleeding.'],
+      ['Spike Traps', 'Spikes appear at player locations with little warning and can cause bleeding.', null, null, null, null, ['bleed']],
       ['Explosive Traps', 'Marked traps detonate after a short delay.'],
       ['Undead Reinforcements', 'Summons liches and other ranged undead.'],
       ['Zombie Dragon', 'Priority summon with a dangerous disease breath.'],
@@ -167,7 +183,7 @@ const rawBosses = [
     abilities: [
       ['Green Sphere', 'Damages nearby players and throws flames while active. Double-click it to destroy it.', 'CLICK', 'The sphere damages anyone standing in its area and continues spawning random flames until a player double-clicks it. Treat it as the first-priority objective.', mechanic('abyssal-green-sphere.webp')],
       ['Flames', 'Spawn from the active sphere and deal minor damage. Step off the burning tile.', 'MOVE', 'Flames appear on random ground tiles for as long as the Green Sphere remains active. They deal minor damage; moving a single tile is enough to leave the fire.', mechanic('abyssal-flames.webp')],
-      ['Abyssal Claws', 'Appear randomly around the arena and inflict a 30+ damage bleed.', 'MOVE', 'Claws can appear anywhere on the battlefield rather than only near the boss. Their hit applies a bleed for roughly 30 or more damage.', mechanic('abyssal-claws.webp')],
+      ['Abyssal Claws', 'Appear randomly around the arena and inflict a 30+ damage bleed.', 'MOVE', 'Claws can appear anywhere on the battlefield rather than only near the boss. Their hit applies a bleed for roughly 30 or more damage.', mechanic('abyssal-claws.webp'), null, ['bleed']],
       ['Beckons the Void', 'Sends orbs inward from every side. Contact removes you into the Void for about 15 seconds.', 'MOVE', 'Void orbs enter from all sides of the arena. Touching one produces an effect similar to the Wilderness main boss and removes the player from the fight for approximately 15 seconds.', mechanic('abyssal-void.webp')],
       ['Abyssal Souls', 'Green ghosts explode into skulls for 50+ area damage and about 30 disease damage. Some variants deal area damage without disease.', 'MOVE', 'The green ghost variant bursts into skulls for roughly 50 or more area damage plus about 30 disease damage. The alternate soul explosion deals area damage without the disease component.', mechanic('abyssal-souls.webp')],
     ],
@@ -214,7 +230,7 @@ const rawBosses = [
     summary: 'A blood-and-bleed fight that demands movement and high health.',
     abilities: [
       ['Blood Burst', 'A large-radius initial hit.'],
-      ['Bleeding Wound', 'Follows burst damage with dangerous damage over time.'],
+      ['Bleeding Wound', 'Follows burst damage with dangerous damage over time.', null, null, null, null, ['bleed']],
       ['Blood Markers', 'Creates hazardous red ground effects around players.'],
     ],
     tips: ['Remain near full health and keep moving.', 'Retreat off-screen when suffering a heavy bleed.'],

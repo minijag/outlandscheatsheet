@@ -3,7 +3,7 @@ import {
   ArrowRight, BookOpen, ChevronRight, CircleAlert, ExternalLink,
   MapPin, Menu, Search, Shield, Skull, Sparkles, Swords, X,
 } from 'lucide-react'
-import { bosses, sources } from './data'
+import { bosses, debuffTypes, sources } from './data'
 
 const preferenceOptions = {
   type: ['All encounters', 'Main Boss', 'Mini-Boss', 'Omni Boss', 'Treasure'],
@@ -40,6 +40,22 @@ function BossArt({ boss, large = false }) {
     <div className={large ? 'art-fallback art-fallback-large' : 'art-fallback'} aria-hidden="true">
       <Skull size={large ? 58 : 34} strokeWidth={1.3} />
     </div>
+  )
+}
+
+function DebuffTag({ type }) {
+  const debuff = debuffTypes[type]
+  if (!debuff) return null
+  const survivalGuidance = `${debuff.guidance} ${debuff.remedies?.join(', ') ?? ''}`.trim()
+
+  return (
+    <span className={`debuff-tag debuff-${type}`} tabIndex="0" aria-label={`${debuff.label}. ${survivalGuidance}`}>
+      {debuff.label}
+      <span className="debuff-tooltip" role="tooltip">
+        <strong>{debuff.label}</strong>
+        {debuff.guidance}{debuff.remedies && <span className="debuff-remedies">{debuff.remedies.map((remedy, index) => <b key={remedy}>{index ? index === debuff.remedies.length - 1 ? ' or ' : ', ' : ''}{remedy}</b>)}</span>}
+      </span>
+    </span>
   )
 }
 
@@ -136,13 +152,16 @@ function BossModal({ boss, onClose }) {
           <p className="verification-note">VERIFIED means a matching callout was recorded in your journal. Matching a callout to an existing mechanic is an interpretation; its damage, timing, and effects are not verified by the callout alone. UNVERIFIED means no matching callout was found in this report.</p>
           {boss.abilities.length ? (
             <div className="ability-list">
-              {boss.abilities.map(({ name, text, action, detail, image, callout, callouts, verification }, index) => (
+              {boss.abilities.map(({ name, text, action, detail, image, callout, callouts, debuffs = [], verification }, index) => (
                 <div className="ability" key={name}>
                   <span>{String(index + 1).padStart(2, '0')}</span>
                   <div>
                     <div className="ability-heading">
-                      <h3>{name}</h3>
-                      {action && <span className={`action-tag action-${action.toLowerCase()}`}>{action}</span>}
+                      <div className="ability-title">
+                        <h3>{name}</h3>
+                        {action && <span className={`action-tag action-${action.toLowerCase()}`}>{action}</span>}
+                      </div>
+                      <div className="debuff-tags">{debuffs.map((type) => <DebuffTag key={type} type={type} />)}</div>
                       <span className={`verification-tag verification-${verification}`} title={verification === 'verified' ? 'Callout observed in the journal; effects and association may be inferred.' : 'No matching callout found in the journal report.'}>{verification.toUpperCase()}</span>
                     </div>
                     {callouts.map((entry) => (
