@@ -174,7 +174,7 @@ footer p { margin: 0; color: #596367; font-size: 10px; text-transform: uppercase
 .ability-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
 .ability-heading h3 { margin: 0; }
 .ability-heading { flex-wrap: wrap; justify-content: flex-start; }
-.verification-tag { font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 4px 7px; border: 1px solid; }
+.verification-tag { flex: 0 0 auto; margin-left: auto; font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 4px 7px; border: 1px solid; }
 .verification-verified { color: #9ce1b5; border-color: #3b7851; background: #162d21; }
 .verification-unverified { color: #e4be86; border-color: #866338; background: #302519; }
 .verification-note { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 12px 0 20px; }
