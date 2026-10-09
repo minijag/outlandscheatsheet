@@ -4,8 +4,13 @@ UO Outlands boss and miniboss mechanics cheat sheet
 ## AdSense preparation
 
 The publisher is `ca-pub-6470382409965600`. The home page includes the ownership
-verification meta tag, and `public/ads.txt` authorizes this publisher. No ad script
-or ad requests are enabled. `npm run build` prerenders the existing home-page
+verification meta tag, and `public/ads.txt` authorizes this publisher. One manual
+display unit (`4519138930`) sits below the encounter index and before Sources.
+It requests an ad when approaching the viewport; empty search results omit the
+unit and encounter modals hide it. Auto ads and Auto optimize are off in AdSense.
+Google's tag loads on the home page and provides the published European consent
+and US-state opt-out messages. Google approval is still required to serve ads.
+`npm run build` prerenders the existing home-page
 content and produces static encounter, guide, about, contact, and privacy pages
 with a sitemap. These pages use the existing reviewed encounter data; generation
 does not independently verify mechanics or content rights.
@@ -17,18 +22,16 @@ Before requesting review in AdSense:
   confirm the Discord contact route reaches the maintainer.
 - Finish any account or payments tasks shown in AdSense (the owner handles
   personal information and identity checks).
-- Add `outlandscheatsheet.com` under Sites and select meta-tag verification.
-- Configure Google-certified European consent messaging and applicable US-state
-  privacy messages in Privacy & messaging before enabling ad serving.
+- Complete site ownership verification for the registered `outlandscheatsheet.com`.
+- European and US-state messages are published in Privacy & messaging. Test their
+  regional display and choice handling when ads become available.
 - Request review after the live site is checked. Google determines approval;
   a successful build or ads.txt does not establish eligibility.
 
-Once the site status is Ready and consent is configured, add the account's ad
-code with intentional placements on substantive content. Keep ads out of the
+Keep ads out of the
 encounter modal, filters, no-results state, and informational/privacy pages;
 avoid overlays and placements beside controls that could cause accidental clicks.
-Update the privacy policy when the ad script is actually enabled. Do not
-repeatedly remove and resubmit a site that is already being reviewed.
+Do not repeatedly remove and resubmit a site that is already being reviewed.
 
 ## Journal phrase scanner
 

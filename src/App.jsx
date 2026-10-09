@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowRight, BookOpen, ChevronRight, CircleAlert, ExternalLink,
   MapPin, Menu, Search, Shield, Skull, Sparkles, Swords, X,
@@ -210,6 +210,37 @@ function BossModal({ boss, onClose }) {
   )
 }
 
+function SingleAd() {
+  const slot = useRef(null)
+  const requested = useRef(false)
+
+  useEffect(() => {
+    const element = slot.current
+    const request = () => {
+      if (requested.current || !element || element.getBoundingClientRect().width === 0) return
+      requested.current = true
+      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+    }
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        request()
+        observer.disconnect()
+      }
+    }, { rootMargin: '200px' })
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <aside className="single-ad" aria-label="Advertisement">
+      <span className="ad-label">Advertisement</span>
+      <ins ref={slot} className="adsbygoogle" style={{ display: 'block' }}
+        data-ad-client="ca-pub-6470382409965600" data-ad-slot="4519138930"
+        data-ad-format="auto" data-full-width-responsive="true" />
+    </aside>
+  )
+}
+
 function App() {
   const [type, setType] = useState(() => savedPreference('type', 'All encounters'))
   const [query, setQuery] = useState('')
@@ -305,6 +336,8 @@ function App() {
             <div className="no-results"><Search /><h3>No encounters found</h3><p>Try a broader boss name, location, or type.</p><button onClick={() => { setQuery(''); setType('All encounters') }}>Clear filters</button></div>
           )}
         </section>
+
+        {filtered.length > 0 && <SingleAd />}
 
         <section className="source-section" id="sources">
           <div className="source-intro">
