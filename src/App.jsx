@@ -356,8 +356,9 @@ function App() {
         <section className="source-section" id="sources">
           <div className="source-intro">
             <span className="section-number">02 / SOURCES</span>
-            <h2>Study the Enemy</h2>
-            <p>The roster and archetypes come from official Outlands pages. Existing descriptions come from community encounters and reference material. New descriptions are inferred from journal callout wording. VERIFIED marks a recorded callout, while UNVERIFIED marks a mechanic with no matching callout in the report.</p>
+            <h2>Study Your Enemy</h2>
+            <p>We need your help! We're looking for volunteers to verify boss abilities and descriptions. Share your encounter experience, check our notes, and help make this cheat sheet more accurate.</p>
+            <p><a className="guide-link" href="https://discord.gg/TmtPheKF2v" target="_blank" rel="noreferrer">Join our Discord to help verify encounters <ExternalLink size={14} /></a></p>
           </div>
           <div className="source-list">
             {sources.map((source, index) => (
