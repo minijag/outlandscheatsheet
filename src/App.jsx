@@ -210,6 +210,20 @@ function BossModal({ boss, onClose }) {
   )
 }
 
+function PrivacyChoices() {
+  const [ready, setReady] = useState(false)
+  useEffect(() => {
+    let mounted = true
+    window.googlefc = window.googlefc || {}
+    window.googlefc.callbackQueue = window.googlefc.callbackQueue || []
+    window.googlefc.callbackQueue.push({ CONSENT_API_READY: () => {
+      if (mounted && typeof window.googlefc.showRevocationMessage === 'function') setReady(true)
+    } })
+    return () => { mounted = false }
+  }, [])
+  return ready ? <button className="privacy-choices" onClick={() => window.googlefc.showRevocationMessage()}>Privacy and cookie settings</button> : null
+}
+
 function SingleAd() {
   const slot = useRef(null)
   const requested = useRef(false)
@@ -355,7 +369,7 @@ function App() {
         </section>
       </main>
 
-      <footer><div className="brand"><span className="brand-sigil"><Swords size={18} /></span><span>OUTLANDS <b>CHEAT SHEET</b></span></div><nav className="footer-links" aria-label="Site information"><a href="/guide/">Using the guide</a><a href="/encounters/">All encounter pages</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a></nav></footer>
+      <footer><div className="brand"><span className="brand-sigil"><Swords size={18} /></span><span>OUTLANDS <b>CHEAT SHEET</b></span></div><nav className="footer-links" aria-label="Site information"><a href="/guide/">Using the guide</a><a href="/encounters/">All encounter pages</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><PrivacyChoices /></nav></footer>
       <BossModal boss={selected} onClose={() => setSelected(null)} />
     </div>
   )
