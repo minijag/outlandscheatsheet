@@ -133,6 +133,7 @@ function BossModal({ boss, onClose }) {
             <div className="eyebrow"><span>{boss.type}</span><i />{boss.slayer}</div>
             <h2 id="modal-title">{boss.name}</h2>
             <p>{boss.summary}</p>
+            <a className="guide-link" href={`/encounters/${boss.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}/`}>Read the full encounter page</a>
             <div className="modal-tags">
               <span><MapPin size={15} />{boss.location}</span>
               <span><Swords size={15} />{boss.role}</span>
@@ -264,6 +265,7 @@ function App() {
         <div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
           <button onClick={() => scrollTo('encounters')}>Encounters</button>
           <button onClick={() => scrollTo('sources')}>Sources</button>
+          <a href="/guide/">Guide</a>
         </div>
         <button className="icon-button menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation"><Menu /></button>
       </nav>
@@ -320,7 +322,7 @@ function App() {
         </section>
       </main>
 
-      <footer><div className="brand"><span className="brand-sigil"><Swords size={18} /></span><span>OUTLANDS <b>CHEAT SHEET</b></span></div></footer>
+      <footer><div className="brand"><span className="brand-sigil"><Swords size={18} /></span><span>OUTLANDS <b>CHEAT SHEET</b></span></div><nav className="footer-links" aria-label="Site information"><a href="/guide/">Using the guide</a><a href="/encounters/">All encounter pages</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a></nav></footer>
       <BossModal boss={selected} onClose={() => setSelected(null)} />
     </div>
   )
